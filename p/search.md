@@ -2,7 +2,13 @@
 title: Search
 webtitle: WMI
 date: 2018-11-24
+type: page
 ---
+
+<form action="/p/search.html" method="GET">
+<input type="text" placeholder="search keywords" name="q" />
+<button type="submit" class="btn-sm">Search</button>
+</form>
 <style>
 #___gcse_0 * {
     background-color: ivory;

@@ -1,1 +1,10 @@
+<<<<<<< HEAD
 _posts/*
+=======
+_posts/Test*
+.guid
+node_modules/
+#yarn.lock
+#package-lock.json
+
+>>>>>>> f4f44d809bd9a1acd0624a56d45514d73f46c794

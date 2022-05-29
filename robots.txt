@@ -1,7 +1,9 @@
 User-agent: *
 Disallow: /backend/*
+Disallow: /source/*
 Disallow: /page/*
-Disallow: /tags/*
+Disallow: /Tests/*
+Disallow: /Test/*
 Disallow: /search/label/*
 Allow: /page/safelink.html
 Allow: /page/bot-detect*
