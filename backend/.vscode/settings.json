@@ -12,4 +12,5 @@
     "editor.formatOnSave": false // custom formating with default vscode formatter
   },
   "editor.formatOnSave": true, // default vscode formatter
+  "git.enabled": true
 }
