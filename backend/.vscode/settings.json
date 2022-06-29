@@ -3,7 +3,7 @@
     "Neverland"
   ],
   "terminal.integrated.env.linux": {
-    "PATH": "./bin:${env:PATH}"
+    "PATH": "./bin:./node_modules/.bin:${env:PATH}"
   },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true // let ESLint take formating and linting
@@ -12,5 +12,8 @@
     "editor.formatOnSave": false // custom formating with default vscode formatter
   },
   "editor.formatOnSave": true, // default vscode formatter
-  "git.enabled": true
+  "git.enabled": true,
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.saveFileBeforeRun": true,
+  "code-runner.saveAllFilesBeforeRun": true
 }

@@ -1,0 +1,23 @@
+{
+  "$schema": "https://raw.githubusercontent.com/SchemaStore/schemastore/master/src/schemas/json/nodemon.json",
+  "exec": "node -r ts-node/register index.ts",
+  "watch": [
+    "views/**/*",
+    "./src/*.ts",
+    "./index.ts",
+    "./webpack.*.js",
+    "./tsconfig.json",
+    "./package.json"
+  ],
+  "ignore": [
+    "*.test.js",
+    ".gitignore",
+    ".vscode",
+    "__tests__/*",
+    "__*__/*.js",
+    "**/node_modules/**"
+  ],
+  "delay": 3000,
+  "ext": "ts,js",
+  "verbose": true
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Attendant Information Chimeraland | WMI</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <style>
+      .img-s {
+        width: 15px;
+        height: 15px;
+      }
+
+      label {
+        text-align: right;
+      }
+
+      body {
+        height: 100%;
+        width: 100%;
+      }
+
+      main {
+        width: fit-content;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#add" class="form-horizontal" id="form">
+      <div class="row">
+        <div class="form-group row col-md-12 mb-2">
+          <label for="AttendantName" class="col-2 col-form-label"
+            >Attendant Name</label
+          >
+          <div class="col-10">
+            <input
+              type="text"
+              name="name"
+              id="AttendantName"
+              class="form-control"
+              placeholder="Insert Animal Name"
+              required />
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center col-md-12 p-2">
+        <button type="submit" class="btn btn-block btn-primary mb-2">
+          Confirm pet
+        </button>
+      </div>
+    </form>
+  </body>
+</html>
