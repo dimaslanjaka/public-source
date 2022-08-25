@@ -2,28 +2,38 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chimeraland In-Game Informations - WMI</title>
-  <link rel="shortcut icon" type="image/x-icon"
-  href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+  <!--responsive-->
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Language" content="en" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!--icons-->
+<link rel="shortcut icon" type="image/x-icon"
+  href="//cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
 <link rel="mask-icon"
-  href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg"
+  href="//cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg"
   color="#111" />
+
+<!--loading speed-->
+<link rel="preconnect" href="//fonts.googleapis.com" />
+<link rel="preconnect" href="//cdnjs.cloudflare.com" />
+<link rel="preconnect" href="//fonts.gstatic.com" />
+
+<!--seo-->
+<title>Chimeraland In-Game Informations - WMI</title>
+<meta name="description" content="
+  Chimeraland In-Game Informations - WMI
+" />
+<meta name="author" content="Dimas Lanjaka" />
 <link rel="canonical" href="https://webmanajemen.com/Chimeraland" />
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2188063137129806"
-  crossorigin="anonymous"></script>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://cdnjs.cloudflare.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&amp;display=swap" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:600,900" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css" />
+<!--stylesheets-->
+<link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Roboto:wght@300&amp;display=swap" />
+<link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons" />
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:600,900" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css" />
 
 <style>
   ::-webkit-scrollbar {
@@ -78,6 +88,9 @@
     vertical-align: text-bottom;
   }
 </style>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2188063137129806"
+  crossorigin="anonymous"></script>
   
   <style>#result-group {
   max-height: 500px;
@@ -112,7 +125,7 @@
           <a class="nav-link" href="https://webmanajemen.com/Chimeraland/Materials">Materials</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://hexo-backend.herokuapp.com/chimeraland/attendant" rel="nofollow"><span class="material-icons"> add_circle </span> Attendant</a>
+          <a class="nav-link" href="https://hexo-backend.herokuapp.com/chimeraland/attendants" rel="nofollow noopener"><span class="material-icons"> add_circle </span> Attendant</a>
         </li>
       </ul>
     </div>
@@ -159,7 +172,7 @@
         <a href="https://webmanajemen.com/Chimeraland/Pets" class="nav-link px-2 text-muted">Pets</a>
       </li>
       <li class="nav-item">
-        <a href="https://www.facebook.com/secretnetworkforces" class="nav-link px-2 text-muted">Fanpage</a>
+        <a href="https://www.facebook.com/secretnetworkforces" class="nav-link px-2 text-muted" rel="nofollow noopener">Fanpage</a>
       </li>
       <li class="nav-item">
         <a href="https://webmanajemen.com/Chimeraland/About.html" class="nav-link px-2 text-muted">About</a>
@@ -195,6 +208,7 @@
   <script>window.onload = function () {
   /* eslint-disable no-undef */
   console.clear();
+  const isLocalHost = /adsense\./.test(location.host);
   // codepen
   if (location.host.includes('cdpn')) {
     $('html, body').animate({
@@ -204,7 +218,9 @@
   }
   // search box
   const attendants = fetch(
-    'https://hexo-backend.herokuapp.com/chimeraland/attendant?show'
+    !isLocalHost
+      ? 'https://hexo-backend.herokuapp.com/Chimeraland/Attendants?show'
+      : '/Chimeraland/Attendants?show'
   )
     .then((res) => res.json())
     .then((data) => {
@@ -214,7 +230,11 @@
       });
       return data;
     });
-  const pets = fetch('https://hexo-backend.herokuapp.com/chimeraland/pets?show')
+  const pets = fetch(
+    !isLocalHost
+      ? 'https://hexo-backend.herokuapp.com/Chimeraland/Pets?show'
+      : '/Chimeraland/Pets?show'
+  )
     .then((res) => res.json())
     .then((data) => {
       data.data = data.data.map((item) => {
