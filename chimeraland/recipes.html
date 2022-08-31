@@ -4,39 +4,48 @@
 <head>
   <!--responsive-->
 <meta charset="UTF-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="Content-Language" content="en" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <!--icons-->
-<link rel="shortcut icon" type="image/x-icon"
+<link
+  rel="shortcut icon"
+  type="image/x-icon"
   href="//cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
-<link rel="mask-icon"
+<link
+  rel="mask-icon"
   href="//cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg"
   color="#111" />
 
-<!--loading speed-->
+<!--seo-->
+<title>Cooking Recipes Chimeraland Informations - WMI</title>
+<meta
+  name="description"
+  content="
+  Cooking Recipes Chimeraland Informations - WMI
+" />
+<meta
+  name="author"
+  content="
+   Dimas Lanjaka
+ " />
+<link rel="canonical" href="https://webmanajemen.com/chimeraland/recipes.html" />
+
+  <!--loading speed-->
 <link rel="preconnect" href="//fonts.googleapis.com" />
 <link rel="preconnect" href="//cdnjs.cloudflare.com" />
 <link rel="preconnect" href="//fonts.gstatic.com" />
 <link rel="preconnect" href="//cdn.jsdelivr.net" />
 <link rel="preconnect" href="//raw.githack.com" />
 
-<!--seo-->
-<title>Cooking Recipes Chimeraland Informations - WMI</title>
-<meta name="description" content="
-  Cooking Recipes Chimeraland Informations - WMI
-" />
-<meta name="author" content="Dimas Lanjaka" />
-<link rel="canonical" href="https://webmanajemen.com/chimeraland/recipes.html" />
-
 <!--stylesheets-->
 <link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Roboto:wght@300&amp;display=swap" />
 <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons" />
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:600,900" />
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
 <style>
   ::-webkit-scrollbar {
@@ -56,21 +65,72 @@
     background: #eee;
   }
 
-  ​ * {
+  *,
+  *::before,
+  *::after {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
     margin: 0;
     padding: 0;
     word-wrap: break-word;
+    color: whitesmoke;
   }
 
+
   body {
-    font-family: Raleway;
     background-color: #202125;
     height: 100%;
     color: whitesmoke;
   }
 
+  h1 a,
+  h2 a,
+  h3 a,
+  h4 a,
+  h5 a {
+    color: whitesmoke;
+    text-decoration: none;
+  }
+
+  /* image responsive */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Browser specific (not valid) styles to make preformatted text wrap */
+  pre {
+    white-space: pre-wrap;
+    /* css-3 */
+    white-space: -moz-pre-wrap;
+    /* Mozilla, since 1999 */
+    white-space: -pre-wrap;
+    /* Opera 4-6 */
+    white-space: -o-pre-wrap;
+    /* Opera 7 */
+    word-wrap: break-word;
+    /* Internet Explorer 5.5+ */
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  b,
+  strong {
+    font-family: Raleway;
+  }
+
   td,
+  p,
   .text {
     font-family: 'Roboto', sans-serif;
   }
@@ -137,27 +197,51 @@
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2188063137129806"
   crossorigin="anonymous"></script>
   
-  <style>* {
+  <style>
+* {
   color: white; }
 
 h2 {
   padding: 20px 0; }
 
 table {
-  /*width: 100%;
+  /*
+  width: 100%;
   overflow: auto;
-  table-layout: fixed;*/
+  table-layout: fixed;
+  */
   display: block;
   overflow-x: auto;
-  white-space: nowrap; }
+  white-space: nowrap;
+  /* remove scrollbar */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */ }
+  table::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari and Opera */ }
   table tbody,
   table thead {
     /*display: table;*/
     width: 100%; }
 
+#legends {
+  margin-bottom: 5px; }
+  #legends li {
+    display: inline-block;
+    margin-right: 2em; }
+
+#terms small {
+  display: inline-block;
+  text-transform: capitalize; }
+  #terms small:not(:last-child)::after {
+    content: ' | '; }
+
 /*select[name='example_length'] {
   background-color: transparent;
 }*/
+
 </style>
   
 </head>
@@ -174,16 +258,22 @@ table {
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="https://www.webmanajemen.com">Home</a>
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://webmanajemen.com/chimeraland/attendants">Attendant</a>
+          <a class="nav-link" href="/chimeraland">Back To Index</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://webmanajemen.com/chimeraland/Pets">Pets</a>
+          <a class="nav-link" href="/chimeraland/attendants">Attendant</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://webmanajemen.com/chimeraland/Materials">Materials</a>
+          <a class="nav-link" href="/chimeraland/monsters">Monsters</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/chimeraland/materials">Materials</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/chimeraland/recipes.html">Recipes</a>
         </li>
         <li class="nav-item d-none">
           <a class="nav-link" href="https://hexo-backend.herokuapp.com/chimeraland/attendants" rel="nofollow noopener"><span class="material-icons"> add_circle </span> Attendant</a>
@@ -192,15 +282,30 @@ table {
     </div>
   </div>
 </nav>
-  
-  <div class="text-center">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-8 mb-2" id="mainbar">
+        
+        <div class="text-center">
   <h2>Chimeraland Cooking Recipes List</h2>
 </div>
 
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
-      <table id="example" class="table table-striped" style="width:100%">
+      <div id="legends">
+        <h5>Abbreviations</h5>
+        <ul>
+          <li>Lv.1 (Grey Grade)</li>
+          <li>Lv.2 (Green Grade)</li>
+          <li>Lv.3 (Blue Grade)</li>
+          <li>Lv.4 (Purple Grade)</li>
+          <li>Lv.5 (Yellow Grade)</li>
+          <li>Lv.6 (Red Grade)</li>
+        </ul>
+      </div>
+
+      <table id="recipe-table" class="table table-striped" style="width: 100%">
         <thead>
           <tr>
             <th>Dish Name</th>
@@ -215,2178 +320,1997 @@ table {
           
           
           
+          
+          
+          
           <tr>
             <td>Apple Sauce</td>
-            <td>Apple + Any Wild Fruit </td>
+            <td>Apple + Any Wild Fruit</td>
             <td>Mixer</td>
-            <td>+180 fullness,+5 Heat Resistance</td>
+            <td>+180 fullness, Heat Resistance +5</td>
             <td>-</td>
             <td>-</td>
           </tr>
           
+          
+          
+          
           <tr>
             <td>Apple Sauce</td>
-            <td>Apple[2] </td>
+            <td>Apple [2]</td>
             <td>Mixer</td>
-            <td>+180 fullness,+5 Heat Resistance</td>
+            <td>+180 fullness, Heat Resistance +5</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Apple Slushie</td>
-            <td>Ice Piece + Apple </td>
+            <td>Ice Piece + Apple</td>
             <td>Mixer - Jam</td>
-            <td>-</td>
+            <td>180 Fullness, Heat Resistance +10</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Arowana Slices</td>
-            <td>Barbled Dragonfish + Lemon Tree Leaf + Barbled Dragonfish </td>
+            <td>Barbled Dragonfish + Lemon Tree Leaf + Barbled Dragonfish</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>540 Fullness, Protect from <a href="#drowning">Drowning</a></td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Bak Kut Teh</td>
-            <td>Ice Piece/Dew + Any Meat + Any High </td>
+            <td>Ice Piece/Dew + Any Meat + Any High Quality Seasoning + Any Flower/Any Mutant Flower</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>540 Fullness, +200 <a href="/chimeraland/recipes.html?q=atk">ATK</a></td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
           
-          <tr>
-            <td>Bak Kut Teh</td>
-            <td>Quality Seasoning + Any Flower/Any Mutant Flower </td>
-            <td>Stove II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
           
           
           
           <tr>
             <td>Beggar's Chicken</td>
-            <td>Watermelon + Vuldo Meat </td>
+            <td>Watermelon + Vuldo Meat</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>300 Fullness, +4% Critical Damage Dealt</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Bird Soup</td>
-            <td>Vuldo Meat + Dew + Any Seasoning + Any Lv.5 / Lv.6 Crop </td>
+            <td>Vuldo Meat + Dew + Any Seasoning + Any Lv.5 / Lv.6 Crop</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>540 Fullness, +8% <a href="/chimeraland/recipes.html?q=crit">CRIT</a> Damage Dealt, <a href="/chimeraland/recipes.html?q=focus">Great Focus</a></td>
             <td>-</td>
             <td>-</td>
           </tr>
           
+          
+          
+          
           <tr>
             <td>Bird Soup</td>
-            <td>Vuldo Meat + Ice Piece + Any Seasoning + Any Lv.5 / Lv.6 Crop </td>
+            <td>Vuldo Meat + Ice Piece + Any Seasoning + Any Lv.5 / Lv.6 Crop</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>540 Fullness, +8% <a href="/chimeraland/recipes.html?q=crit">CRIT</a> Damage Dealt, <a href="/chimeraland/recipes.html?q=focus">Great Focus</a></td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
+          
+          
+          
+          <tr>
+            <td>Blanched Greens</td>
+            <td>Dew + Any Lv.6 Crop + Any Lv.6 Crop</td>
+            <td>Stove II</td>
+            <td>660 Fullness, +80 <a href="/chimeraland/recipes.html?q=armor pierce">Armor Pierce</a></td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          
           
           
           
           <tr>
             <td>Blanched Greens</td>
-            <td>Dew + Any Lv. 6 Crop + Any Lv. 6 Crop </td>
+            <td>Ice Piece + Any Lv.6 Crop + Any Lv.6 Crop</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>660 Fullness, +80 <a href="/chimeraland/recipes.html?q=armor pierce">Armor Pierce</a></td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
           
-          <tr>
-            <td>Blanched Greens</td>
-            <td>Ice Piece + Any Lv.6 Crop + Any Lv.6 Crop </td>
-            <td>Stove II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
           
           
           
           <tr>
             <td>Bodhi Fruit Sauce</td>
-            <td>Bodhi Fruit + Any Wild Fruit </td>
+            <td>Bodhi Fruit + Any Wild Fruit</td>
             <td>Mixer - Jam</td>
-            <td>-</td>
+            <td>180 Fullness, Heat Resistance +5</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Braised Bear Meat</td>
-            <td>Grizzly Meat + Peanut Oil + Any Sweet Sauce + Any Sweet Sauce </td>
+            <td>Grizzly Meat + Peanut Oil + Any Sweet Sauce + Any Sweet Sauce</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>420 Fullness, +150 ATK</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Braised Meat Cubes</td>
-            <td>Any Meat + Dew/Insect Ichor </td>
+            <td>Any Meat + Dew/Insect Ichor</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>180 Fullness</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
-            <td>Braised Scorpion</td>
-            <td>Scorab Meat + Any Mixed Sauce + Any High </td>
+            <td>Braised SCropion</td>
+            <td>Scorab Meat + Any Mixed Sauce + Any High Quality Seasoning + Peanut Oil</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>540 Fullness, +100 <a href="/chimeraland/recipes.html?q=atk">ATK</a></td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
           
-          <tr>
-            <td>Braised Scorpion</td>
-            <td>Quality Seasoning + Peanut Oil </td>
-            <td>Stove II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
           
           
           
           <tr>
             <td>Braised Tendons</td>
-            <td>Hoof Sinew + Hoof Sinew </td>
+            <td>Hoof Sinew + Hoof Sinew</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>300 Fullness, 15 RES for 15 Minutes</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Braised Wings</td>
-            <td>Dew + Ice Piece + Dew + Any Lv. 5 Crop/Any Lv. 6 Crop </td>
+            <td>Dew + Ice Piece + Dew + Any Lv.5 Crop/Any Lv.6 Crop</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>540 Fullness, 8% <a href="/chimeraland/recipes.html?q=crit">CRIT</a> damage deal</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Broiled Meat</td>
-            <td>Any Seasoning + Any Fish </td>
+            <td>Any Seasoning + Any Fish</td>
             <td>Camp II</td>
-            <td>-</td>
+            <td>300 Fullness, Strengthen Underwater Effect</td>
             <td>-</td>
             <td>-</td>
           </tr>
+          
+          
+          
           
           <tr>
             <td>Broiled Meat</td>
-            <td>Any Spice + Any Fish </td>
+            <td>Any Spice + Any Fish</td>
             <td>Camp II</td>
-            <td>-</td>
+            <td>300 Fullness, Strengthen Underwater Effect</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Bubbling Stew</td>
-            <td>Ice Piece + Any Mixed Sauce + Any Meat + Any Meat + Any High </td>
+            <td>Ice Piece + Any Mixed Sauce + Any Meat + Any Meat + Any High Quality Seasoning</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>540 Fullness, +200 <a href="/chimeraland/recipes.html?q=atk">ATK</a></td>
             <td>-</td>
             <td>-</td>
           </tr>
           
-          <tr>
-            <td>Bubbling Stew</td>
-            <td>Quality Seasoning </td>
-            <td>Stove II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
+          
+          
           
           <tr>
             <td>Bubbling Stew</td>
-            <td>Dew + Any Mixed Sauce + Any Meat + Any Meat + Any High </td>
+            <td>Dew + Any Mixed Sauce + Any Meat + Any Meat + Any High Quality Seasoning</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>540 Fullness, +200 <a href="/chimeraland/recipes.html?q=atk">ATK</a></td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
           
-          <tr>
-            <td>Bubbling Stew</td>
-            <td>Quality Seasoning </td>
-            <td>Stove II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
           
           
           
           <tr>
             <td>Buddha's Temptation</td>
-            <td>Hoof Sinew + Crab Claw Meat + Bird Wing + Coriander Powder + Any Mushroom </td>
+            <td>Hoof Sinew + Crab Claw Meat + Bird Wing + Coriander Powder + Any Mushroom</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>660 Fullness, +250 <a href="/chimeraland/recipes.html?q=atk">ATK</a></td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Cabbage Meat Rolls</td>
-            <td>Peanut Oil + Bok Choy + Any Lv. 6 Crop + Any High </td>
+            <td>Peanut Oil + Bok Choy + Any Lv.6 Crop + Any High Quality Seasoning + Any Meat</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>660 Fullness, +160 <a href="/chimeraland/recipes.html?q=deff">DEF</a>, <a href="/chimeraland/recipes.html?q=focus">Great Focus</a></td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
           
-          <tr>
-            <td>Cabbage Meat Rolls</td>
-            <td>Quality Seasoning + Any Meat </td>
-            <td>Stove II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
           
           
           
           <tr>
             <td>Cantaloupe Claypot</td>
-            <td>Cantaloupe + Fruit & Veg Paste + Any Meat + Any Lv. 6 Crop + Dew </td>
+            <td>Cantaloupe + Fruit & Veggie Paste + Any Meat + Any Lv.6 Crop + Dew</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>660 Fullness, 80 <a href="/chimeraland/recipes.html?q=armor pierce">Armor Pierce</a>, <a href="/chimeraland/recipes.html?q=focus">Great Focus</a></td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Cantaloupe Slushie</td>
-            <td>Ice Piece + Cantaloupe </td>
+            <td>Ice Piece + Cantaloupe</td>
             <td>Mixer</td>
-            <td>+300 fullness,+15 Heat Resistance</td>
+            <td>+300 fullness, Heat Resistance +15</td>
             <td>-</td>
             <td>-</td>
           </tr>
           
+          
+          
+          
           <tr>
             <td>Cantaloupe Slushie</td>
-            <td>Cantaloupe + Ice Piece </td>
+            <td>Cantaloupe + Ice Piece</td>
             <td>Mixer</td>
-            <td>+300 fullness,+15 Heat Resistance</td>
+            <td>+300 fullness, Heat Resistance +15</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Chargrilled Pumpkin And Iguana</td>
-            <td>Peanut Oil + Grouguana Meat + Pumpkin + Any Flower/Any Mutant Flower </td>
+            <td>Peanut Oil + Grouguana Meat + Pumpkin + Any Flower/Any Mutant Flower</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>420 Fullness, +25 Armor Pierce</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Chargrilled Skewers</td>
-            <td>Any Meat + Any Meat/Any Seasoning/Any Spice </td>
+            <td>Any Meat + Any Meat/Any Seasoning/Any Spice</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>240 Fullness</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Chargrilled Vegetable Kabob</td>
-            <td>Any Wild Fruit + Any Lv.1/Lv.2/Lv.3/Lv.4 Crop </td>
+            <td>Any Wild Fruit + Any Lv.1 Crop/Any Lv.2 Crop/Any Lv.3 Crop/Any Lv.4 Crop</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>180 Fullness</td>
             <td>-</td>
             <td>-</td>
           </tr>
           
+          
+          
+          
           <tr>
             <td>Chargrilled Vegetable Kabob</td>
-            <td>Any Lv. 3 Crop + Any Lv. 3 Crop/Any Lv. 4 Crop </td>
+            <td>Any Lv.3 Crop + Any Lv.3 Crop/Any Lv.4 Crop</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>180 Fullness</td>
             <td>-</td>
             <td>-</td>
           </tr>
           
-          <tr>
-            <td>Chargrilled Vegetable Kabob</td>
-            <td>Any Lv. 4 Crop + Any Lv. 4 Crop </td>
-            <td>Stove II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
           
           
           
           <tr>
-            <td>Cherry*Braised Meat</td>
-            <td>Any Wild Fruit + Any Lv. 6 Crop + Any Mixed Sauce + Any Mixed Sauce + Any Meat </td>
+            <td>Chargrilled Vegetable Kabob</td>
+            <td>Any Lv.4 Crop + Any Lv.4 Crop</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>180 Fullness</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
+          
+          
+          
+          <tr>
+            <td>Cherry-Braised Meat</td>
+            <td>Any Wild Fruit + Any Lv.6 Crop + Any Mixed Sauce + Any Mixed Sauce + Any Meat</td>
+            <td>Stove II</td>
+            <td>660 Fullness, 250 <a href="/chimeraland/recipes.html?q=atk">ATK</a></td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+           
+          
           
           
           
           <tr>
             <td>Cold Lime Broth</td>
-            <td>Bodhi Fruit + Ice Piece + Any Meat </td>
+            <td>Bodhi Fruit + Ice Piece + Any Meat</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>300 Fullness, Heat Resistance +15</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Cold Lime Soup</td>
-            <td>Bodhi Fruit + Ice Piece </td>
+            <td>Bodhi Fruit + Ice Piece</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>180 Fullness, Heat Resistance +10</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Cucumber Sauce</td>
-            <td>Cucumber + Job's Tears + Any Wild Fruit </td>
+            <td>Cucumber + Job's Tears + Any Wild Fruit</td>
             <td>Mixer - Jam</td>
-            <td>-</td>
+            <td>300 Fullness</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Curry Grilled Meat</td>
-            <td>Any Meat + Any Seasoning + Any Spice </td>
+            <td>Any Meat + Any Seasoning + Any Spice</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>420 Fullness, +150 ATK</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
+          
+          
           
           
           
           <tr>
             <td>Dark Cuisine</td>
-            <td>Dung + Dew/Ice Piece --Device: Mixer - Jam-- </td>
-            <td>ALL</td>
-            <td>Component for making fertilizer,Component for making fertilizer</td>
+            <td>Dung + Dew/Ice Piece </td>
+            <td>Mixer - Jam</td>
+            <td>Component for making fertilizer, Component for making fertilizer</td>
             <td>-</td>
             <td>-</td>
           </tr>
           
+          
+          
+          
+          
+          
           <tr>
             <td>Dark Cuisine</td>
-            <td>Dung + Any Fish --Device: Camp Lv. 2-- </td>
-            <td>ALL</td>
-            <td>Component for making fertilizer,Component for making fertilizer</td>
+            <td>Dung + Any Fish </td>
+            <td>Camp Lv.2</td>
+            <td>Component for making fertilizer, Component for making fertilizer</td>
             <td>-</td>
             <td>-</td>
           </tr>
           
+          
+          
+          
+          
+          
           <tr>
             <td>Dark Cuisine</td>
-            <td>Dung + Any Lv. 1/Lv. 2/Lv.3/Lv. 4/Lv.5/Lv.6/Lv.7 Crop --Device: Stove II-- </td>
-            <td>ALL</td>
-            <td>Component for making fertilizer,Component for making fertilizer</td>
+            <td>Dung + Any Grade Crop </td>
+            <td>Stove II</td>
+            <td>Component for making fertilizer, Component for making fertilizer</td>
             <td>-</td>
             <td>-</td>
           </tr>
           
+          
+          
+          
+          
+          
           <tr>
             <td>Dark Cuisine</td>
-            <td>Dung + Any High </td>
-            <td>ALL</td>
-            <td>Component for making fertilizer,Component for making fertilizer</td>
+            <td>Dung + Any High Quality Seasoning/Any Flower/Any Mutant Flower/Any Curio </td>
+            <td>Stove II</td>
+            <td>Component for making fertilizer, Component for making fertilizer</td>
             <td>-</td>
             <td>-</td>
           </tr>
           
+          
+          
+          
           <tr>
             <td>Dark Cuisine</td>
-            <td>Quality Seasoning/Any Flower/Any Mutant Flower/Any Curio --Device: Stove II-- </td>
+            <td>Any Meat [1]</td>
             <td>ALL</td>
-            <td>Component for making fertilizer,Component for making fertilizer</td>
+            <td>Component for making fertilizer, Component for making fertilizer</td>
             <td>-</td>
             <td>-</td>
           </tr>
           
-          <tr>
-            <td>Dark Cuisine</td>
-            <td>Any Meat[1] </td>
-            <td>ALL</td>
-            <td>Component for making fertilizer,Component for making fertilizer</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
+          
+          
           
           <tr>
             <td>Dark Cuisine</td>
-            <td>Insect Inchor[1] </td>
+            <td>Insect Inchor [1]</td>
             <td>ALL</td>
-            <td>Component for making fertilizer,Component for making fertilizer</td>
+            <td>Component for making fertilizer, Component for making fertilizer</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Deep Fried Liver</td>
-            <td>Beast Liver + Chunk of Fat + Chunk of Fat + Beast Liver </td>
+            <td>Beast Liver + Chunk of Fat + Chunk of Fat + Beast Liver</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>420 Fullness, +25 Armor Pierce</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Deep Fried Meat</td>
-            <td>Any Meat + Any Meat + Any Meat/Any Wild Fruit/Any High </td>
+            <td>Any Meat + Any Meat + Any Meat/Any Wild Fruit/Any High Quality Seasoning</td>
             <td>Camp II</td>
-            <td>-</td>
+            <td>300 Fullness, 12 Armor Pierce</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
           
-          <tr>
-            <td>Deep Fried Meat</td>
-            <td>Quality Seasoning </td>
-            <td>Camp II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
           
           
           
           <tr>
             <td>Dragon Meat Stew</td>
-            <td>Croc Meat + Dew/Ice Piece + Any Lv. 6 Crop + Any Lv. 6 Crop </td>
+            <td>Croc Meat + Dew/Ice Piece + Any Lv.6 Crop + Any Lv.6 Crop</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>660 Fullness, +150 <a href="/chimeraland/recipes.html?q=atk">ATK</a></td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Drunken Fish</td>
-            <td>Any Sweet Sauce + Any Fish + Any Lv. 2 Crop </td>
+            <td>Any Sweet Sauce + Any Fish + Any Lv.2 Crop</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>300 Fullness, +30 CRIT</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Egg Soup</td>
-            <td>Egg White + Dew/Ice Piece </td>
+            <td>Egg White + Dew/Ice Piece</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>180 Fullness</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Eggs With Gourd</td>
-            <td>Watermelon + Egg White + Peanut Oil </td>
+            <td>Watermelon + Egg White + Peanut Oil</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>540 Fullness, +100 <a href="/chimeraland/recipes.html?q=crit">CRIT</a></td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Fish And Vegetable Stew</td>
-            <td>Dew/Ice Piece + Any Lv. 6 Crop + Any Spice + Orange </td>
+            <td>Dew/Ice Piece + Any Lv.6 Crop + Any Spice + Orange grade fish/Red grade fish</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>660 Fullness, +80 <a href="/chimeraland/recipes.html?q=armor pierce">Armor Pierce</a></td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
           
-          <tr>
-            <td>Fish And Vegetable Stew</td>
-            <td>grade fish/Red </td>
-            <td>Stove II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Fish And Vegetable Stew</td>
-            <td>grade fish </td>
-            <td>Stove II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
           
           
           
           <tr>
             <td>Fishball Soup</td>
-            <td>Dew/Ice Piece + Dew/Ice Piece + Green </td>
+            <td>Dew/Ice Piece + Dew/Ice Piece + Green grade fish</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>300 Fullness, -50 Humidity (decreased over time) (decreased over time)</td>
             <td>-</td>
             <td>-</td>
           </tr>
           
-          <tr>
-            <td>Fishball Soup</td>
-            <td>grade fish </td>
-            <td>ALL</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
+          
+          
           
           <tr>
             <td>Fishball Soup</td>
-            <td>Dew/Ice Piece + Blue </td>
+            <td>Dew/Ice Piece + Blue grade fish/Purple grade fish/Orange grade fish/Red grade fish</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>300 Fullness, -50 Humidity (decreased over time) (decreased over time)</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
           
-          <tr>
-            <td>Fishball Soup</td>
-            <td>grade fish/Purple </td>
-            <td>ALL</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Fishball Soup</td>
-            <td>grade fish/Orange </td>
-            <td>ALL</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Fishball Soup</td>
-            <td>grade fish/Red </td>
-            <td>ALL</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Fishball Soup</td>
-            <td>grade fish </td>
-            <td>ALL</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
           
           
           
           <tr>
             <td>Flower Pancake</td>
-            <td>Job's Tears Powder + Any Wild Fruit + Any Mutant Flower/Any Flower </td>
+            <td>Job's Tears Powder + Any Wild Fruit + Any Mutant Flower/Any Flower</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>300 Fullness</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Fragrant Meat Stew</td>
-            <td>Dew/Ice Piece + Any High </td>
+            <td>Dew/Ice Piece + Any High Quality Seasoning + Any Meat + Any Spice + Any Lv.5 Crop/Any Lv.6 Crop</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>660 Fullness, +160 <a href="/chimeraland/recipes.html?q=deff">DEF</a>, <a href="/chimeraland/recipes.html?q=focus">Great Focus</a></td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
           
-          <tr>
-            <td>Fragrant Meat Stew</td>
-            <td>Quality Seasoning + Any Meat + Any Spice + Any Lv. 5 Crop/Any Lv. 6 Crop </td>
-            <td>Stove II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
           
           
           
           <tr>
             <td>Fragrant Steamed Buns</td>
-            <td>Job's Tears Powder + Egg White + Any Lv. 6 Crop + Any Meat + Any Meat </td>
+            <td>Job's Tears Powder + Egg White + Any Lv.6 Crop + Any Meat + Any Meat</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>660 Fullness, +150 <a href="/chimeraland/recipes.html?q=crit">CRIT</a>, <a href="/chimeraland/recipes.html?q=focus">Great Focus</a></td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Fried Fish</td>
-            <td>Peanut Oil + Any High </td>
+            <td>Peanut Oil + Any High Quality Seasoning + Red grade Fish + Peanut Oil</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>660 Fullness, +80 <a href="/chimeraland/recipes.html?q=armor pierce">Armor Pierce</a></td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
           
-          <tr>
-            <td>Fried Fish</td>
-            <td>Quality Seasoning + Red </td>
-            <td>Stove II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Fried Fish</td>
-            <td>grade Fish + Peanut Oil </td>
-            <td>Stove II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
           
           
           
           <tr>
             <td>Fried Intestines</td>
-            <td>Beast Intestines + Any Lv. 4 Crop/Any Lv. 5 Crop/Any Lv. 6 Crop/Any Flower/Any Mutant Flower + Peanut Oil </td>
+            <td>Beast Intestines + Any Lv.4 Crop/Any Lv.5 Crop/Any Lv.6 Crop/Any Flower/Any Mutant Flower + Peanut Oil</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>420 Fullness, +60 Crit</td>
             <td>-</td>
             <td>-</td>
           </tr>
           
+          
+          
+          
           <tr>
             <td>Fried Intestines</td>
-            <td>Kidney + Peanut Oil + Any Lv. 4 Crop/Any Lv. 5 Crop/Any Lv. 6 Crop/Any Flower/Any Mutant Flower </td>
+            <td>Kidney + Peanut Oil + Any Lv.4 Crop/Any Lv.5 Crop/Any Lv.6 Crop/Any Flower/Any Mutant Flower</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>420 Fullness, +60 Crit</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Fried Liver</td>
-            <td>Beast Liver + Beast Liver </td>
+            <td>Beast Liver + Beast Liver</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>300 Fullness, 50 DEF for 15 Minutes</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Fried Meat With Mushrooms</td>
-            <td>Any Mushroom + Any Meat + Any Seasoning/Any High </td>
+            <td>Any Mushroom + Any Meat + Any Seasoning/Any High Quality Seasoning</td>
             <td>Camp II</td>
             <td>-</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
           
-          <tr>
-            <td>Fried Meat With Mushrooms</td>
-            <td>Quality Seasoning </td>
-            <td>Camp II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
           
           
           
           <tr>
             <td>Fried Melon And Meat</td>
-            <td>Any Meat + Any High </td>
+            <td>Any Meat + Any High Quality Seasoning + Any Lv.5 or Lv.6 Crop</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>540 Fullness, +120 <a href="/chimeraland/recipes.html?q=deff">DEF</a>, Great <a href="/chimeraland/recipes.html?q=focus">Focus</a></td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
           
-          <tr>
-            <td>Fried Melon And Meat</td>
-            <td>Quality Seasoning + Any Lv. 5 or Lv. 6 Crop </td>
-            <td>Stove II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
           
           
           
           <tr>
             <td>Fried Pork In Scoop</td>
-            <td>Job's Tears Powder + Coriander + Any Meat + Any Lv. 5 or Lv. 6 Crop </td>
+            <td>Job's Tears Powder + Coriander + Any Meat + Any Lv.5 or Lv.6 Crop</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>660 Fullness, +100 <a href="/chimeraland/recipes.html?q=RES">RES</a>, <a href="/chimeraland/recipes.html?q=focus">Great Focus</a></td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Fried Seasonal Vegetables</td>
-            <td>Add 2 Any Lv.1 to Lv.6 Crops </td>
+            <td>Add 2 Any Lv.1 to Lv.6 Crops</td>
             <td>Stove II</td>
             <td>-</td>
             <td>-</td>
             <td>-</td>
           </tr>
           
+          
+          
+          
           <tr>
             <td>Fried Seasonal Vegetables</td>
-            <td>Any Lv. 2 Crop + Any Lv. 2, Lv. 3, Lv. 4, Lv. 5 or Lv. 6 Crop/Any Mushroom </td>
+            <td>Any Lv.2 Crop + Any Lv.2 Crop/Any Lv.3 Crop/Any Lv.4 Crop/Any Lv.5 Crop/Any Lv.6 Crop/Any Mushroom</td>
             <td>Stove II</td>
             <td>-</td>
             <td>-</td>
             <td>-</td>
           </tr>
           
+          
+          
+          
           <tr>
             <td>Fried Seasonal Vegetables</td>
-            <td>Any Lv. 3 Crop + Any Lv. 3/Any Lv. 4 Crop/Any Lv. 5 Crop/Any Lv. 6 Crop/Any Mushroom/Any Mutant Flower </td>
+            <td>Any Lv.3 Crop + Any Lv.3 Crop/Any Lv.4 Crop/Any Lv.5 Crop/Any Lv.6 Crop/Any Mushroom/Any Mutant Flower</td>
             <td>Stove II</td>
             <td>-</td>
             <td>-</td>
             <td>-</td>
           </tr>
           
+          
+          
+          
           <tr>
             <td>Fried Seasonal Vegetables</td>
-            <td>Any Lv. 4 Crop + Any Lv. 4 Crop/Any Lv. 5 Crop/Any Lv. 6 Crop/Any Mushroom/Any Mutant Flower/Any Flower </td>
+            <td>Any Lv.4 Crop + Any Lv.4 Crop/Any Lv.5 Crop/Any Lv.6 Crop/Any Mushroom/Any Mutant Flower/Any Flower</td>
             <td>Stove II</td>
             <td>-</td>
             <td>-</td>
             <td>-</td>
           </tr>
           
+          
+          
+          
           <tr>
             <td>Fried Seasonal Vegetables</td>
-            <td>Any Lv. 5 Crop + Any Lv. 5 Crop or higher Crop/Any Mushroom/Any Mutant Flower/Any Flower </td>
+            <td>Any Lv.5 Crop + Any Lv.5 Crop or higher Crop/Any Mushroom/Any Mutant Flower/Any Flower</td>
             <td>Stove II</td>
             <td>-</td>
             <td>-</td>
             <td>-</td>
           </tr>
           
+          
+          
+          
           <tr>
             <td>Fried Seasonal Vegetables</td>
-            <td>Any Lv. 6 Crop + Any Lv. 6 Crop/Any Mushroom/Any Mutant Flower/Any Flower </td>
+            <td>Any Lv.6 Crop + Any Lv.6 Crop/Any Mushroom/Any Mutant Flower/Any Flower</td>
             <td>Stove II</td>
             <td>-</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Fried Vegetarian Balls</td>
-            <td>Job's Tears Powder + Any Lv. 1 Crop/Any Lv. 2 Crop/Any Lv. 3 Crop/Any Lv. 4 Crop </td>
+            <td>Job's Tears Powder + Any Lv.1 Crop/Any Lv.2 Crop/Any Lv.3 Crop/Any Lv.4 Crop</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>300 Fullness, +30 CRIT</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Frog Honey Sauce</td>
-            <td>Peanut Oil + Beetlefly Meat + Any High </td>
+            <td>Peanut Oil + Beetlefly Meat + Any High Quality Seasoning + Any Mixed Sauce + Any Mixed Sauce</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>660 Fullness, +160 <a href="/chimeraland/recipes.html?q=deff">DEF</a></td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
           
-          <tr>
-            <td>Frog Honey Sauce</td>
-            <td>Quality Seasoning + Any Mixed Sauce + Any Mixed Sauce </td>
-            <td>Stove II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
           
           
           
           <tr>
-            <td>Fruit & Veg Paste</td>
-            <td>Any Lv. 1 Crop/Any Lv. 2 Crop/Any Lv. 3 Crop/Any Lv. 4 Crop/Any Lv. 5 Crop/Any Lv. 6 Crop </td>
+            <td>Fruit & Veggie Paste</td>
+            <td>Any Lv.1 Crop/Any Lv.2 Crop/Any Lv.3 Crop/Any Lv.4 Crop/Any Lv.5 Crop/Any Lv.6 Crop</td>
             <td>Mixer - Jam</td>
             <td>-</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
+          
+          
+          
+          <tr>
+            <td>Fruit And Vegetable Stew</td>
+            <td>Any Meat + Dew/Ice Piece + Any Seasoning + Any Lv.5 Crop/Any Lv.6 Crop</td>
+            <td>Stove II Fruit Sauce</td>
+            <td>540 Fullness, +60 <a href="/chimeraland/recipes.html?q=RES">RES</a>, Great <a href="/chimeraland/recipes.html?q=focus">Focus</a></td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          
           
           
           
           <tr>
             <td>Fruit And Vegetable Stew</td>
-            <td>Any Meat + Dew/Ice Piece + Any Seasoning + Any Lv. 5 Crop/Any Lv. 6 Crop </td>
+            <td>Fruit & Veggie Paste + Any Wild Fruit + Any Wild Fruit</td>
             <td>Stove II Fruit Sauce</td>
-            <td>-</td>
+            <td>540 Fullness, +60 <a href="/chimeraland/recipes.html?q=RES">RES</a>, Great <a href="/chimeraland/recipes.html?q=focus">Focus</a></td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
           
-          <tr>
-            <td>Fruit And Vegetable Stew</td>
-            <td>Fruit & Veg Paste + Any Wild Fruit + Any Wild Fruit </td>
-            <td>Stove II Fruit Sauce</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
           
           
           
           <tr>
             <td>Fruity Fried Mackerel</td>
-            <td>Any Wild Fruit + Any Mixed Sauce + Any Mixed Sauce + Orange </td>
+            <td>Any Wild Fruit + Any Mixed Sauce + Any Mixed Sauce + Orange grade fish/Red grade fish + Peanut Oil</td>
             <td>Stove II</td>
             <td>-</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
           
-          <tr>
-            <td>Fruity Fried Mackerel</td>
-            <td>grade fish/Red </td>
-            <td>Stove II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Fruity Fried Mackerel</td>
-            <td>grade fish + Peanut Oil </td>
-            <td>Stove II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
           
           
           
           <tr>
             <td>Fruity Grilled Meat</td>
-            <td>Any Meat + Any Wild Fruit + Any Sweet Sauce + Peanut Oil </td>
+            <td>Any Meat + Any Wild Fruit + Any Sweet Sauce + Peanut Oil</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>420 Fullness, +80 DEF</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Fruity Meat Skewers</td>
-            <td>Any Meat + Any Wild Fruit/Any Seasoning/Any Offal/Any Spice </td>
+            <td>Any Meat + Any Wild Fruit/Any Seasoning/Beast Heart/Beast Liver/Beast Brain/Beast Insentines/Kidney/Hoof Sinew/Chunk Of Fat/Any Spice</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>240 Fullness</td>
             <td>-</td>
             <td>-</td>
           </tr>
+          
+          
+          
           
           <tr>
             <td>Fruity Meat Skewers</td>
-            <td>Any Lv. 1 Crop/Any Lv. 2 Crop/Any Lv. 3 Crop/Any Lv. 4 Crop + Any Meat </td>
+            <td>Any Lv.1 Crop/Any Lv.2 Crop/Any Lv.3 Crop/Any Lv.4 Crop + Any Meat</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>240 Fullness</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Garlic Braised Meat</td>
-            <td>Wolfspider Meat + Wild Garlic + Garlic Powder </td>
+            <td>Wolfspider Meat + Wild Garlic + Garlic Powder</td>
             <td>Camp II</td>
-            <td>-</td>
+            <td>300 Fullness, 100 ATK</td>
             <td>-</td>
             <td>-</td>
           </tr>
+          
+          
+          
           
           <tr>
             <td>Garlic Braised Meat</td>
-            <td>Garlic Powder + Wild Garlic + Crab Claw Meat </td>
+            <td>Garlic Powder + Wild Garlic + Crab Claw Meat</td>
             <td>Camp II</td>
-            <td>-</td>
+            <td>300 Fullness, 100 ATK</td>
             <td>-</td>
             <td>-</td>
           </tr>
+          
+          
+          
           
           <tr>
             <td>Garlic Braised Meat</td>
-            <td>Garlic Powder + Wild Garlic + Scorab Meat </td>
+            <td>Garlic Powder + Wild Garlic + Scorab Meat</td>
             <td>Camp II</td>
-            <td>-</td>
+            <td>300 Fullness, 100 ATK</td>
             <td>-</td>
             <td>-</td>
           </tr>
+          
+          
+          
           
           <tr>
             <td>Garlic Braised Meat</td>
-            <td>Garlic Powder + Wild Garlic + Beetlefly Meat </td>
+            <td>Garlic Powder + Wild Garlic + Beetlefly Meat</td>
             <td>Camp II</td>
-            <td>-</td>
+            <td>300 Fullness, 100 ATK</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
           
+          
+          
+          
+          <tr>
+            <td>Garlic Meat Skewers</td>
+            <td>Garlic Powder + Any Meat</td>
+            <td>ALL</td>
+            <td>300 Fullness, 50 DEF</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+           
+          
+          
+          
+          
+          <tr>
+            <td>Garlic Steak</td>
+            <td>Garlic Powder + Job's Tears Powder + Bosalo Meat</td>
+            <td>Camp II</td>
+            <td>300 Fullness, 50 DEF</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+           
           
           
           
           
           <tr>
             <td>Garlic Sauce</td>
-            <td>Wild Garlic + Any Wild Fruit </td>
-            <td>Mixer - Jam Garlic Steak</td>
-            <td>-</td>
+            <td>Wild Garlic + Any Wild Fruit</td>
+            <td>Mixer - Jam</td>
+            <td>180 Fullness, Reduces Toxins by 30</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
           
-          <tr>
-            <td>Garlic Sauce</td>
-            <td>Garlic Powder + Job's Tears Powder </td>
-            <td>Mixer - Jam Garlic Steak</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
           
           
           
           <tr>
             <td>Garlic Thighs</td>
-            <td>Scallion + Any Meat + Peanut Oil </td>
+            <td>Scallion + Any Meat + Peanut Oil</td>
             <td>ALL</td>
             <td>-</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Goodfruit Sauce</td>
-            <td>Red Goodfruit + Any Wild Fruit </td>
+            <td>Red Goodfruit + Any Wild Fruit</td>
             <td>Mixer - Jam</td>
-            <td>-</td>
+            <td>180 Fullness, Cold Resistance +5</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Goodfruit Slushie</td>
-            <td>Ice Piece + Red Goodfruit </td>
+            <td>Ice Piece + Red Goodfruit</td>
             <td>Mixer - Jam</td>
-            <td>-</td>
+            <td>180 Fullness, Heat Resistance +10</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
-            <td>Gourd*Braised Meat</td>
-            <td>Gourd + Any Meat + Any Seasoning/Any Spice/Any Sweet Sauce/Any Spicy Sauce </td>
+            <td>Gourd-Braised Meat</td>
+            <td>Gourd + Any Meat + Any Seasoning/Any Spice/Any Sweet Sauce/Any Spicy Sauce</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>420 Fullness, +6% Crit Damage Dealt</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Grilled Bear Paw</td>
-            <td>Bear Paw + Any Seasoning/Any Spice/Any High </td>
+            <td>Bear Paw + Any Seasoning/Any Spice/Any High Quality Seasoning</td>
             <td>Camp II</td>
-            <td>-</td>
+            <td>420 Fullness, 150 ATK</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
           
-          <tr>
-            <td>Grilled Bear Paw</td>
-            <td>Quality Seasoning </td>
-            <td>Camp II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
           
           
           
           <tr>
             <td>Grilled Bird</td>
-            <td>Vuldo Meat + Any Wild Fruit + Any Lv. 4 Crop </td>
+            <td>Vuldo Meat + Any Wild Fruit + Any Lv.4 Crop</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>420 Fullness, +60 CRIT, Medium Focus</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Grilled Brains</td>
-            <td>Beast Brain + Beast Brain </td>
+            <td>Beast Brain + Beast Brain</td>
             <td>ALL</td>
             <td>-</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
           
           
           
-          <tr>
-            <td>Grilled Crab Claws</td>
-            <td>Crab Claw Meat + Any Seasoning/Any Spice/Any High </td>
-            <td>Camp II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
           
           <tr>
             <td>Grilled Crab Claws</td>
-            <td>Quality Seasoning </td>
+            <td>Crab Claw Meat + Any Seasoning/Any Spice/Any High Quality Seasoning</td>
             <td>Camp II</td>
-            <td>-</td>
+            <td>420 Fullness, 150 ATK</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Grilled Fish</td>
-            <td>Any Seasoning + Purple </td>
+            <td>Any Seasoning + Purple grade fish/Orange grade fish/Red grade fish</td>
             <td>Camp II</td>
-            <td>-</td>
+            <td>420 Fullness, Strenghten Underwater Effect</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
           
-          <tr>
-            <td>Grilled Fish</td>
-            <td>grade fish/Orange </td>
-            <td>Camp II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Grilled Fish</td>
-            <td>grade fish/Red </td>
-            <td>Camp II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Grilled Fish</td>
-            <td>grade fish </td>
-            <td>Camp II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
           
           
           
           <tr>
             <td>Grilled Frog Legs</td>
-            <td>Any Meat + Any Meat/Any Seasoning/Any Spice/Any Offal </td>
+            <td>Any Meat + Any Meat/Any Seasoning/Any Spice/Beast Heart/Beast Liver/Beast Brain/Beast Insentines/Kidney/Hoof Sinew/Chunk Of Fat</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>180 Fullness, Strengthen Underwater Effect</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Grilled Heart</td>
-            <td>Beast Heart + Beast Heart </td>
+            <td>Beast Heart + Beast Heart</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>300 Fullness, 100 ATK for 15 Minutes</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Grilled Kidneys</td>
-            <td>Kidney + Kidney </td>
+            <td>Kidney + Kidney</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>300 Fullness, 15 RES for 15 Minutes</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Grilled Meat And Mushrooms</td>
-            <td>Any Mushroom + Any Meat </td>
+            <td>Any Mushroom + Any Meat</td>
             <td>Camp II</td>
-            <td>-</td>
+            <td>240 Fullness, Cold Resistance +10</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Grilled Meat Cubes</td>
-            <td>Any Meat + Any Meat/Any Seasoning/Any Spice/Any Offal </td>
+            <td>Any Meat + Any Meat/Any Seasoning/Any Spice/Beast Heart/Beast Liver/Beast Brain/Beast Insentines/Kidney/Hoof Sinew/Chunk Of Fat</td>
             <td>ALL</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          
-          
-          
-          <tr>
-            <td>Grilled Mushrooms</td>
-            <td>Any Mushroom </td>
-            <td>Camp II</td>
-            <td>-</td>
+            <td>180 Fullness</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Grilled Offal</td>
-            <td>Beast Intestines + Beast Intestines </td>
+            <td>Beast Intestines + Beast Intestines</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>300 Fullness, 30 Crit for 15 Minutes</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Grilled Rabbit</td>
-            <td>Any Meat + Any Meat/Any Seasoning/Any Spice/Any Offal </td>
+            <td>Any Meat + Any Meat/Any Seasoning/Any Spice/Beast Heart/Beast Liver/Beast Brain/Beast Insentines/Kidney/Hoof Sinew/Chunk Of Fat</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>180 Fullness</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Grilled Venison</td>
-            <td>Moose Meat + Moose Meat </td>
+            <td>Moose Meat + Moose Meat</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>240 Fullness</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Grilled Wings</td>
-            <td>Bird Wing + Any Seasoning/Any Spice/Any High </td>
+            <td>Bird Wing + Any Seasoning/Any Spice/Any High Quality Seasoning</td>
             <td>Camp II</td>
-            <td>-</td>
+            <td>420 Fullness, 80 DEF</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
           
-          <tr>
-            <td>Grilled Wings</td>
-            <td>Quality Seasoning </td>
-            <td>Camp II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
           
           
           
           <tr>
             <td>Grilled Wolf</td>
-            <td>Peanut Oil + Prowler Meat + Prowler Meat + Any Seasoning </td>
+            <td>Peanut Oil + Prowler Meat + Prowler Meat + Any Seasoning</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>420 Fullness, +60Crit, Medium Focus</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Herb Grilled Crab</td>
-            <td>Crab Claw Meat + Orchid + Any Seasoning/Any Spice </td>
+            <td>Crab Claw Meat + Orchid + Any Seasoning/Any Spice</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>420 Fullness, +150 ATK</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Honey Grilled Chicken</td>
-            <td>Condor Meat + Condor Meat + Any Sweet Sauce + Peanut Oil </td>
+            <td>Condor Meat + Condor Meat + Any Sweet Sauce + Peanut Oil</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>420 Fullness, +80 DEF</td>
             <td>-</td>
             <td>-</td>
           </tr>
           
+          
+          
+          
           <tr>
             <td>Honey Grilled Chicken</td>
-            <td>Vulture Meat + Vulture Meat + Any Sweet Sauce + Peanut Oil </td>
+            <td>Vulture Meat + Vulture Meat + Any Sweet Sauce + Peanut Oil</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>420 Fullness, +80 DEF</td>
             <td>-</td>
             <td>-</td>
           </tr>
           
+          
+          
+          
           <tr>
             <td>Honey Grilled Chicken</td>
-            <td>Vuldo Meat + Vuldo Meat + Any Sweet Sauce + Peanut Oil </td>
+            <td>Vuldo Meat + Vuldo Meat + Any Sweet Sauce + Peanut Oil</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>420 Fullness, +80 DEF</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Honeybee Jerky</td>
-            <td>Beetlefly Meat + Any Meat + Any Sweet Sauce + Peanut Oil </td>
+            <td>Beetlefly Meat + Any Meat + Any Sweet Sauce + Peanut Oil</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>420 Fullness, +6% Crit Damage Dealt</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Honeydew Melon Slushie</td>
-            <td>Ice Piece + Honeydew Melon + Ice Piece </td>
+            <td>Ice Piece + Honeydew Melon + Ice Piece</td>
             <td>mixer</td>
-            <td>+540 fullness,+15 Heat Resistance</td>
+            <td>+540 fullness, Heat Resistance +15</td>
             <td>Legendary</td>
             <td>-</td>
           </tr>
+           
           
-          <tr>
-            <td>Honeydew Melon Slushie</td>
-            <td>Ice Piece + Honeydew Melon + Ice Piece </td>
-            <td>mixer</td>
-            <td>+540 fullness,+15 Heat Resistance</td>
-            <td>Legendary</td>
-            <td>-</td>
-          </tr>
           
           
           
           <tr>
             <td>Hot Oil</td>
-            <td>Peanut Oil + Peanut Oil </td>
+            <td>Peanut Oil + Peanut Oil</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>240 Fullness, Cold Resistance +10</td>
             <td>-</td>
             <td>-</td>
           </tr>
           
+          
+          
+          
           <tr>
             <td>Hot Oil</td>
-            <td>Chunk of Fat + Chunk of Fat </td>
+            <td>Chunk of Fat + Chunk of Fat</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>240 Fullness, Cold Resistance +10</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Hot Water</td>
-            <td>Dew/Ice Piece + Dew/Ice Piece/Any Seasoning/Any Spice/Insect Ichor </td>
+            <td>Dew/Ice Piece + Dew/Ice Piece/Any Seasoning/Any Spice/Insect Ichor</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>60 Fullness, Cold Resistance +5</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Ice Block</td>
-            <td>Ice Piece + Ice Piece </td>
+            <td>Ice Piece + Ice Piece</td>
             <td>Mixer</td>
-            <td>+180 fullness,+10 Heat Resistance</td>
+            <td>+180 fullness, Heat Resistance +10</td>
             <td>-</td>
             <td>-</td>
           </tr>
           
+          
+          
+          
           <tr>
             <td>Ice Block</td>
-            <td>Ice Piece[2] </td>
+            <td>Ice Piece [2]</td>
             <td>Mixer</td>
-            <td>+180 fullness,+10 Heat Resistance</td>
+            <td>+180 fullness, Heat Resistance +10</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Job's Tears Broth</td>
-            <td>Job's Tears + Dew/Ice Piece + Any Meat </td>
+            <td>Job's Tears + Dew/Ice Piece + Any Meat</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>300 Fullness, -50 Humidity (decreased over time)</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Job's Tears Porridge</td>
-            <td>Job's Tears + Dew/Ice Piece </td>
+            <td>Job's Tears + Dew/Ice Piece</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>180 Fullness, -40 Humidity (decreased over time)</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Job's Tears Sauce</td>
-            <td>Job's Tears + Any Wild Fruit </td>
+            <td>Job's Tears + Any Wild Fruit</td>
             <td>Mixer - Jam</td>
-            <td>-</td>
+            <td>180 Fullness</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Job's Tears Stew</td>
-            <td>Job's Tears + Any Meat + Any Lv. 4 Crop </td>
+            <td>Job's Tears + Any Meat + Any Lv.4 Crop</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>420 Fullness, Medium Focus, +25 Armor Pierce</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Large Fruit Stew</td>
-            <td>Any Wild Fruit + Dew/Ice Piece/Insect Ichor </td>
+            <td>Any Wild Fruit + Dew/Ice Piece/Insect Ichor</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>240 Fullness</td>
             <td>-</td>
             <td>-</td>
           </tr>
           
+          
+          
+          
           <tr>
             <td>Large Fruit Stew</td>
-            <td>Dew/Ice Piece + Any Lv. 1 Crop/Any Lv. 2 Crop/Any Lv. 3 Crop/Any Lv. 4 Crop </td>
+            <td>Dew/Ice Piece + Any Lv.1 Crop/Any Lv.2 Crop/Any Lv.3 Crop/Any Lv.4 Crop</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>240 Fullness</td>
             <td>-</td>
             <td>-</td>
           </tr>
           
+          
+          
+          
           <tr>
             <td>Large Fruit Stew</td>
-            <td>Dew/Ice Piece + Any Lv. 1 Crop/Any Lv. 2 Crop/Any Lv. 3 Crop/Any Lv. 4 Crop/Any Mutant Flower/Any Flower </td>
+            <td>Dew/Ice Piece + Any Lv.1 Crop/Any Lv.2 Crop/Any Lv.3 Crop/Any Lv.4 Crop/Any Mutant Flower/Any Flower</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>240 Fullness</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
+          
+          
+          
+          <tr>
+            <td>Meat And Vegetable</td>
+            <td>Any Meat + Any Spice + Any Lv.3 Crop/Any Lv.4 Crop</td>
+            <td>Stove II</td>
+            <td>420 Fullness, Medium Focus, +25 Armor Pierce</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          
           
           
           
           <tr>
             <td>Meat And Vegetable</td>
-            <td>Any Meat + Any Spice + Any Lv. 3 Crop/Any Lv. 4 Crop </td>
+            <td>Beast Heart/Beast Liver/Beast Brain/Beast Insentines/Kidney/Hoof Sinew/Chunk Of Fat + Any Lv.5 Crop/Any Lv.6 Crop</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>420 Fullness, Medium Focus, +25 Armor Pierce</td>
             <td>-</td>
             <td>-</td>
           </tr>
           
+          
+          
+          
           <tr>
             <td>Meat And Vegetable</td>
-            <td>Any Offal + Any Lv. 5 Crop/Any Lv. 6 Crop </td>
+            <td>Any Curio + Any Lv.5 Crop/Any Lv.6 Crop</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>420 Fullness, Medium Focus, +25 Armor Pierce</td>
             <td>-</td>
             <td>-</td>
           </tr>
           
-          <tr>
-            <td>Meat And Vegetable</td>
-            <td>Any Curio + Any Lv. 5 Crop/Any Lv. 6 Crop </td>
-            <td>Stove II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
+          
+          
           
           <tr>
             <td>Meat And Vegetable</td>
-            <td>Any Meat + Any Lv. 5 Crop/Any Lv. 6 Crop </td>
+            <td>Any Meat + Any Lv.5 Crop/Any Lv.6 Crop</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>420 Fullness, Medium Focus, +25 Armor Pierce</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Meat Noodles</td>
-            <td>Dew/Ice Piece + Any Lv. 6 Crop + Any Meat + Any Lv. 6 Crop </td>
+            <td>Dew/Ice Piece + Any Lv.6 Crop + Any Meat + Any Lv.6 Crop</td>
             <td>Camp II</td>
-            <td>+600 fullness,+250 atk</td>
+            <td>+600 fullness, +250 atk</td>
             <td>-</td>
             <td>-</td>
           </tr>
+          
+          
+          
           
           <tr>
             <td>Meat Noodles</td>
-            <td>dew + crop level 6 + any meat + crop level 6 </td>
+            <td>dew + crop level 6 + Any Meat + crop level 6</td>
             <td>Camp II</td>
-            <td>+600 fullness,+250 atk</td>
+            <td>+600 fullness, +250 atk</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Meat Pie</td>
-            <td>Any Meat + Any Meat + Any Meat + Any High </td>
+            <td>Any Meat + Any Meat + Any Meat + Any High Quality Seasoning + Job's Tears Powder</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>540 Fullness, +60 <a href="/chimeraland/recipes.html?q=RES">RES</a>, Great <a href="/chimeraland/recipes.html?q=focus">Focus</a></td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
           
-          <tr>
-            <td>Meat Pie</td>
-            <td>Quality Seasoning + Job's Tears Powder </td>
-            <td>Stove II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
           
           
           
           <tr>
             <td>Mushroom Broth</td>
-            <td>Any Mushroom + Any Meat + Dew/Ice Piece </td>
+            <td>Any Mushroom + Any Meat + Dew/Ice Piece</td>
             <td>Camp II</td>
             <td>Unlock Stove II</td>
             <td>-</td>
             <td><a href="#unlock-stove-ii">Watch Tutorial</a></td>
           </tr>
+           
           
-          <tr>
-            <td>Mushroom Broth</td>
-            <td>any mushroom + any meat + dew/ice piece </td>
-            <td>Camp II</td>
-            <td>Unlock Stove II</td>
-            <td>-</td>
-            <td><a href="#unlock-stove-ii">Watch Tutorial</a></td>
-          </tr>
           
           
           
           <tr>
             <td>New Year Dumplings</td>
-            <td>Job's Tears Powder + Job's Tears Powder + Any Lv. 6 Crop + Any Meat + Peanut Oil </td>
+            <td>Job's Tears Powder + Job's Tears Powder + Any Lv.6 Crop + Any Meat + Peanut Oil</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>660 Fullness, +100 <a href="/chimeraland/recipes.html?q=RES">RES</a>, <a href="/chimeraland/recipes.html?q=focus">Great Focus</a></td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Omelette</td>
-            <td>Egg White + Egg White </td>
+            <td>Egg White + Egg White</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>300 Fullness, +15 RES</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
-            <td>One*Pot Stew</td>
-            <td>Egg White + Any Meat + Any Wild Fruit + Any Lv. 6 Crop + Any Lv. 5 Crop/Any Lv. 6 Crop </td>
+            <td>One-Pot Stew</td>
+            <td>Egg White + Any Meat + Any Wild Fruit + Any Lv.6 Crop + Any Lv.5 Crop/Any Lv.6 Crop</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>660 Fullness, +80 <a href="/chimeraland/recipes.html?q=armor pierce">Armor Pierce</a></td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Orchid Soup</td>
-            <td>Orchid + Dew/Ice Piece + Any Wild Fruit </td>
+            <td>Orchid + Dew/Ice Piece + Any Wild Fruit</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>180 Fullness, Restore 500 HP within 15 seconds</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Peanut Ball Soup</td>
-            <td>Peanut + Dew/ce Piece + Any Meat </td>
+            <td>Peanut + Dew/ce Piece + Any Meat</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>420 Fullness, +6% CRIT Damage Dealt</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Peanut Gourd Soup</td>
-            <td>Peanut + Gourd + Dew or Ice Piece + Any Lv. 4 Crop/Any Lv. 5 Crop/Any Lv. 6 Crop/Any Flower/Any Mutant Flower </td>
-            <td>stove ii</td>
-            <td>-540,Crit DMG +8%,Anotrog Attendant Recruitment.</td>
+            <td>Peanut + Gourd + Dew or Ice Piece + Any Lv.4 Crop/Any Lv.5 Crop/Any Lv.6 Crop/Any Flower/Any Mutant Flower</td>
+            <td>Stove II</td>
+            <td>-540, Crit DMG +8%, Anotrog Attendant Recruitment.</td>
             <td>Legendary</td>
             <td>-</td>
           </tr>
           
+          
+          
+          
           <tr>
             <td>Peanut Gourd Soup</td>
-            <td>Peanut + Gourd + Dew/Ice Piece + Cantaloupe/Mutant Flower/Equonix Flower/Lv6 Vegetable </td>
-            <td>stove ii</td>
-            <td>-540,Crit DMG +8%,Anotrog Attendant Recruitment.</td>
+            <td>Peanut + Gourd + Dew/Ice Piece + Cantaloupe/Mutant Flower/Equonix Flower/Lv6 Vegetable</td>
+            <td>Stove II</td>
+            <td>-540, Crit DMG +8%, Anotrog Attendant Recruitment.</td>
             <td>Legendary</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Poached Meat Fillets</td>
-            <td>Peanut Oil + Hot Pepper + Dew or Ice Piece + Any Meat + Any Lv. 4 Crop/Any Lv. 5 Crop/Any Lv. 6 Crop </td>
+            <td>Peanut Oil + Hot Pepper + Dew or Ice Piece + Any Meat + Any Lv.4 Crop/Any Lv.5 Crop/Any Lv.6 Crop</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>540 Fullness, +50 <a href="/chimeraland/recipes.html?q=armor pierce">Armor Pierce</a>, <a href="/chimeraland/recipes.html?q=focus">Great Focus</a></td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Pumpkin Bowl</td>
-            <td>Pumpkin + Any Lv. 6 Crop + Any Meat + Any Meat + Any Lv. 3 Crop/Any Lv. 4 Crop/Any Lv. 5 Crop/Any Lv. 6 Crop </td>
+            <td>Pumpkin + Any Lv.6 Crop + Any Meat + Any Meat + Any Lv.3 Crop/Any Lv.4 Crop/Any Lv.5 Crop/Any Lv.6 Crop</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>660 Fullness, +10% <a href="/chimeraland/recipes.html?q=crit">Crit Damage Dealt</a>, <a href="/chimeraland/recipes.html?q=focus">Great Focus</a></td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Red Cabbage Soup</td>
-            <td>Tomato + Dew/Ice Piece + Any Lv. 6 Crop + Any Mixed Sauce + Dew/Ice Piece </td>
+            <td>Tomato + Dew/Ice Piece + Any Lv.6 Crop + Any Mixed Sauce + Dew/Ice Piece</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>660 Fullness, +250 <a href="/chimeraland/recipes.html?q=atk">ATK</a></td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Red Hot Sauce</td>
-            <td>Hot Pepper + Apple + Any Wild Fruit </td>
+            <td>Hot Pepper + Apple + Any Wild Fruit</td>
             <td>Mixer - Jam</td>
-            <td>-</td>
+            <td>300 Fullness</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Refreshing Pill</td>
-            <td>Wild Garlic + Fruit & Veg Paste </td>
+            <td>Wild Garlic + Fruit & Veggie Paste</td>
             <td>Mixer</td>
-            <td>+180 fullness,-40 toxins/s</td>
+            <td>+180 fullness, -40 toxins/s</td>
             <td>-</td>
             <td>-</td>
           </tr>
           
+          
+          
+          
           <tr>
             <td>Refreshing Pill</td>
-            <td>Wild Garlic + Vegie Paste </td>
+            <td>Wild Garlic + Veggie Paste</td>
             <td>Mixer</td>
-            <td>+180 fullness,-40 toxins/s</td>
+            <td>+180 fullness, -40 toxins/s</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Refreshing Soup</td>
-            <td>Wild Garlic + Dew or Ice Piece + Any Meat </td>
+            <td>Wild Garlic + Dew or Ice Piece + Any Meat</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>300 Fullness, -40 Toxin Reduction</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Rice Patty</td>
-            <td>Job's Tears Powder + Any Meat + Any Lv. 3 to Lv.4 Crop </td>
+            <td>Job's Tears Powder + Any Meat + Lv.3/4 Crop</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>420 Fullness, Medium Focus, +35 RES</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
-            <td>Salt*Baked Fish</td>
-            <td>White </td>
+            <td>Salt-Baked Fish</td>
+            <td>Any Fish + Any Fish</td>
             <td>Camp II</td>
-            <td>-</td>
+            <td>300 Fullness, Temporarily Protect From Drowning (Even if your breath reached zero the hp will not decrease)</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
           
-          <tr>
-            <td>Salt*Baked Fish</td>
-            <td>grade fish + White </td>
-            <td>Camp II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Salt*Baked Fish</td>
-            <td>grade fish/Green </td>
-            <td>Camp II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Salt*Baked Fish</td>
-            <td>grade fish/Blue </td>
-            <td>Camp II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Salt*Baked Fish</td>
-            <td>grade fish </td>
-            <td>Camp II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Salt*Baked Fish</td>
-            <td>Green </td>
-            <td>Camp II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Salt*Baked Fish</td>
-            <td>grade fish + White </td>
-            <td>Camp II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Salt*Baked Fish</td>
-            <td>grade fish/Green </td>
-            <td>Camp II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Salt*Baked Fish</td>
-            <td>grade fish/Blue </td>
-            <td>Camp II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Salt*Baked Fish</td>
-            <td>grade fish </td>
-            <td>Camp II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Salt*Baked Fish</td>
-            <td>Blue </td>
-            <td>Camp II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Salt*Baked Fish</td>
-            <td>grade fish + White </td>
-            <td>Camp II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Salt*Baked Fish</td>
-            <td>grade fish/Green </td>
-            <td>Camp II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Salt*Baked Fish</td>
-            <td>grade fish/Blue </td>
-            <td>Camp II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Salt*Baked Fish</td>
-            <td>grade fish </td>
-            <td>Camp II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Salt*Baked Fish</td>
-            <td>Purple </td>
-            <td>Camp II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Salt*Baked Fish</td>
-            <td>grade fish + Any Fish </td>
-            <td>Camp II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Salt*Baked Fish</td>
-            <td>Orange </td>
-            <td>Camp II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Salt*Baked Fish</td>
-            <td>grade fish + Any Fish </td>
-            <td>Camp II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Salt*Baked Fish</td>
-            <td>Red </td>
-            <td>Camp II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Salt*Baked Fish</td>
-            <td>grade fish + Any Fish </td>
-            <td>Camp II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
           
           
           
           <tr>
             <td>Scallion Meat Skewers</td>
-            <td>Scallion Powder + Any Meat </td>
+            <td>Scallion Powder + Any Meat</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>300 Fullness, 12 Armor Pierce</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Scraps Claypot</td>
-            <td>Add Dung 4x </td>
+            <td>Add Dung 4x</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>180 Fullness</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
-            <td>Sea*Buckthorn Broth</td>
-            <td>Sea </td>
+            <td>Sea-Buckthorn Broth</td>
+            <td>Sea-Buckthorn + Dew or Ice Piece + Any Meat</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>300 Fullness, Lv 3 Sandstorm Resistance</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
           
-          <tr>
-            <td>Sea*Buckthorn Broth</td>
-            <td>Buckthorn + Dew or Ice Piece + Any Meat </td>
-            <td>ALL</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
           
           
           
           <tr>
-            <td>Sea*Buckthorn Mixed Juice</td>
-            <td>Sea </td>
+            <td>Sea-Buckthorn Mixed Juice</td>
+            <td>Sea-Buckthorn + Any Wild Fruit</td>
             <td>Mixer - Jam</td>
             <td>-</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
           
-          <tr>
-            <td>Sea*Buckthorn Mixed Juice</td>
-            <td>Buckthorn + Any Wild Fruit </td>
-            <td>Mixer - Jam</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
           
           
           
           <tr>
-            <td>Sea*Buckthorn Sauce</td>
-            <td>Sea </td>
+            <td>Sea-Buckthorn Sauce</td>
+            <td>Sea-Buckthorn + Any Wild Fruit</td>
             <td>Mixer - Jam</td>
-            <td>-</td>
+            <td>180 Fullness</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
           
-          <tr>
-            <td>Sea*Buckthorn Sauce</td>
-            <td>Buckthorn + Any Wild Fruit </td>
-            <td>Mixer - Jam</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
           
           
           
           <tr>
-            <td>Sea*Buckthorn Slushie</td>
-            <td>Ice Piece + Sea </td>
+            <td>Sea-Buckthorn Slushie</td>
+            <td>Ice Piece + Sea-Buckthorn</td>
             <td>Mixer - Jam</td>
-            <td>-</td>
+            <td>180 Fullness, Heat Resistance +10</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
           
-          <tr>
-            <td>Sea*Buckthorn Slushie</td>
-            <td>Buckthorn </td>
-            <td>Mixer - Jam</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
           
           
           
           <tr>
             <td>Seafood Rice</td>
-            <td>Job's Tears + Crab Claw Meat + Job's Tears + Any High </td>
+            <td>Job's Tears + Crab Claw Meat + Job's Tears + Any High Quality Seasoning + Any Lv.6 Crop</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>660 Fullness, +150 <a href="/chimeraland/recipes.html?q=crit">Crit</a>, <a href="/chimeraland/recipes.html?q=focus">Great Focus</a></td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
           
-          <tr>
-            <td>Seafood Rice</td>
-            <td>Quality Seasoning + Any Lv. 6 Crop </td>
-            <td>Stove II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
           
           
           
           <tr>
             <td>Seasonal Vegetables Fried With Garlic</td>
-            <td>Wild Garlic + Garlic Powder + Any Lv. 2, Lv.3 and Lv.4 Crop </td>
+            <td>Wild Garlic + Garlic Powder + Any Lv.2, Lv.3 and Lv.4 Crop</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>300 Fullness, +100 ATK</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Sesame Soup</td>
-            <td>Peanut Oil + Sesame + Any Seasoning/Any Spice/Any Sweet Sauce/Any Spicy Sauce </td>
+            <td>Peanut Oil + Sesame + Any Seasoning/Any Spice/Any Sweet Sauce/Any Spicy Sauce</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>420 Fullness, +35 RES</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Sliced Fish Stew</td>
-            <td>Egg White + Any Meat + Any Lv. 3 Crop + Purple </td>
+            <td>Egg White + Any Meat + Any Lv.3 Crop + Purple grade fish/Orange grade fish/Red grade fish</td>
             <td>Stove II</td>
-            <td>+540 fullness,Temporarily protect from drowning for a long time</td>
+            <td>+540 fullness, Temporarily protect from drowning for a long time</td>
             <td>Legendary</td>
             <td>-</td>
           </tr>
           
-          <tr>
-            <td>Sliced Fish Stew</td>
-            <td>grade fish/Orange </td>
-            <td>Stove II</td>
-            <td>+540 fullness,Temporarily protect from drowning for a long time</td>
-            <td>Legendary</td>
-            <td>-</td>
-          </tr>
+          
+          
           
           <tr>
             <td>Sliced Fish Stew</td>
-            <td>grade fish/Red </td>
+            <td>Egg White + Any Meat + Lemon Tree Leaf/Any rare Crops such as pumpkin etc + any epic fish</td>
             <td>Stove II</td>
-            <td>+540 fullness,Temporarily protect from drowning for a long time</td>
+            <td>+540 fullness, Temporarily protect from drowning for a long time</td>
             <td>Legendary</td>
             <td>-</td>
           </tr>
+           
           
-          <tr>
-            <td>Sliced Fish Stew</td>
-            <td>grade fish </td>
-            <td>Stove II</td>
-            <td>+540 fullness,Temporarily protect from drowning for a long time</td>
-            <td>Legendary</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Sliced Fish Stew</td>
-            <td>Egg White + Any Meat + Lemon Tree Leaf/Any rare corps such as pumpkin etc + any epic fish </td>
-            <td>Stove II</td>
-            <td>+540 fullness,Temporarily protect from drowning for a long time</td>
-            <td>Legendary</td>
-            <td>-</td>
-          </tr>
           
           
           
           <tr>
             <td>Sliced Mushrooms</td>
-            <td>Any Mushroom + Any Wild Fruit + Dew/Ice Piece + Any Seasoning </td>
+            <td>Any Mushroom + Any Wild Fruit + Dew/Ice Piece + Any Seasoning</td>
             <td>Camp II</td>
-            <td>-</td>
+            <td>420 Fullness, Cold Resistance +15</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Slushie</td>
-            <td>Triple Dew/Ice Piece (Dew/Ice Piece 3x) </td>
-            <td>Mixer - Jam</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Slushie</td>
-            <td>Ice Piece + Any Wild Fruit </td>
+            <td>Dew/Ice Piece [3]</td>
             <td>Mixer - Jam</td>
             <td>-</td>
             <td>-</td>
@@ -2395,678 +2319,827 @@ table {
           
           
           
+          
           <tr>
-            <td>Soy*Braised Pork</td>
-            <td>Peanut Oil + Spicy Powder + Any Wild Fruit + Any Meat </td>
+            <td>Slushie</td>
+            <td>Ice Piece + Any Wild Fruit</td>
+            <td>Mixer - Jam</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+           
+          
+          
+          
+          
+          <tr>
+            <td>Soy-Braised Pork</td>
+            <td>Peanut Oil + Spicy Powder + Any Wild Fruit + Any Meat</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>420 Fullness, +35 RES</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Spiced Meat</td>
-            <td>Any Seasoning + Any Meat + Any Seasoning </td>
+            <td>Any Seasoning + Any Meat + Any Seasoning</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>420 Fullness, +150 ATK</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Spiced Meat Skewers</td>
-            <td>Five Spice Powder + Any Meat + Any Meat </td>
+            <td>Five Spice Powder + Any Meat + Any Meat</td>
             <td>Camp II</td>
-            <td>-</td>
+            <td>420 Fullness, 80 DEF</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Spiced Mushrooms</td>
-            <td>Any Mushroom + Any Seasoning </td>
+            <td>Any Mushroom + Any Seasoning</td>
             <td>Camp II</td>
-            <td>-</td>
+            <td>300 Fullness, -50 Humidity (decreased over time)</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Spicy Grilled Fish</td>
-            <td>Peanut Oil + Any Spicy Sauce + Blue </td>
+            <td>Peanut Oil + Any Spicy Sauce + Blue grade fish/Purple grade fish/Orange grade fish/Red grade fish</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>420 Fullness, +35 RES</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
           
-          <tr>
-            <td>Spicy Grilled Fish</td>
-            <td>grade fish/Purple </td>
-            <td>ALL</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Spicy Grilled Fish</td>
-            <td>grade fish/Orange </td>
-            <td>ALL</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Spicy Grilled Fish</td>
-            <td>grade fish/Red </td>
-            <td>ALL</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Spicy Grilled Fish</td>
-            <td>grade fish </td>
-            <td>ALL</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
           
           
           
           <tr>
             <td>Spicy Meat Skewers</td>
-            <td>Any Spice + Any Meat + Any Meat </td>
+            <td>Any Spice + Any Meat + Any Meat</td>
             <td>Camp II</td>
-            <td>-</td>
+            <td>300 Fullness, Crit Damage Deals 4%</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Spicy Pepper Sauce</td>
-            <td>Hot Pepper + Any Wild Fruit </td>
+            <td>Hot Pepper + Any Wild Fruit</td>
             <td>Mixer - Jam</td>
             <td>-</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Spicy Red Goodfruit Broth</td>
-            <td>Red Goodfruit + Hot Pepper + Dew or Ice Piece + Any Meat </td>
+            <td>Red Goodfruit + Hot Pepper + Dew or Ice Piece + Any Meat</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>300 Fullness, Cold Resistance +15</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Spicy Red Goodfruit Soup</td>
-            <td>Red Goodfruit + Dew/Ice Piece </td>
+            <td>Red Goodfruit + Dew/Ice Piece</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>180 Fullness, Cold Resistance +10</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Spicy Smoked Meat</td>
-            <td>Any Meat + Peanut Oil + Spicy Powder </td>
+            <td>Any Meat + Peanut Oil + Spicy Powder</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>420 Fullness, +60 CRIT</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Steamed Brains</td>
-            <td>Beast Brain + Peanut + Dew or Ice Piece + Any Seasoning/Any High </td>
+            <td>Beast Brain + Peanut + Dew or Ice Piece + Any Seasoning/Any High Quality Seasoning</td>
             <td>Stove II</td>
-            <td>+540 fullness,+120 def for 15 mins</td>
-            <td>Legendary</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Steamed Brains</td>
-            <td>Quality Seasoning </td>
-            <td>Stove II</td>
-            <td>+540 fullness,+120 def for 15 mins</td>
-            <td>Legendary</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Steamed Brains</td>
-            <td>Beast Brain + Peanut + Dew/Ice Piece + Garlic Powder/Job's Tears Powder </td>
-            <td>Stove II</td>
-            <td>+540 fullness,+120 def for 15 mins</td>
+            <td>+540 fullness, +120 def for 15 mins</td>
             <td>Legendary</td>
             <td>-</td>
           </tr>
           
           
           
+          
           <tr>
-            <td>Steamed Fish</td>
-            <td>Lemon Tree Leaf + Dew or Ice Piece + Purple </td>
+            <td>Steamed Brains</td>
+            <td>Beast Brain + Peanut + Dew/Ice Piece + Garlic Powder/Job's Tears Powder</td>
             <td>Stove II</td>
-            <td>-</td>
-            <td>-</td>
+            <td>+540 fullness, +120 def for 15 mins</td>
+            <td>Legendary</td>
             <td>-</td>
           </tr>
+           
+          
+          
+          
           
           <tr>
             <td>Steamed Fish</td>
-            <td>grade fish/Orange </td>
+            <td>Lemon Tree Leaf + Dew or Ice Piece + Purple grade fish/Orange grade fish/Red grade fish</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>420 Fullness, Protect from drowning even when your&nbsp; breath is zero</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
           
-          <tr>
-            <td>Steamed Fish</td>
-            <td>grade fish/Red </td>
-            <td>Stove II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Steamed Fish</td>
-            <td>grade fish </td>
-            <td>Stove II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
           
           
           
           <tr>
             <td>Steamed Paw</td>
-            <td>Bear Paw + Orchid + Five Spice Powder + Any Wild Fruit + Dew/Ice Piece </td>
-            <td>stove ii</td>
-            <td>+540 fullness,+200 atk</td>
+            <td>Bear Paw + Orchid + Five Spice Powder + Any Wild Fruit + Dew/Ice Piece</td>
+            <td>Stove II</td>
+            <td>+540 fullness, +200 atk</td>
             <td>Legendary</td>
             <td>-</td>
           </tr>
           
+          
+          
+          
           <tr>
             <td>Steamed Paw</td>
-            <td>Bear Paw + Orchid + Five Spice Powder + Apple + Ice Piece/Dew </td>
-            <td>stove ii</td>
-            <td>+540 fullness,+200 atk</td>
+            <td>Bear Paw + Orchid + Five Spice Powder + Apple + Ice Piece/Dew</td>
+            <td>Stove II</td>
+            <td>+540 fullness, +200 atk</td>
             <td>Legendary</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Steamed Vegetarian Patty</td>
-            <td>Egg White + Peanut Oil + Fruit & Veg Paste + Any Lv. 3 Crop/Any Lv. 4 Crop/Any Lv. 5 Crop/Any Lv. 6 Crop/Any Flower/Any Mutant Flower </td>
+            <td>Egg White + Peanut Oil + Fruit & Veggie Paste + Any Lv.3 Crop/Any Lv.4 Crop/Any Lv.5 Crop/Any Lv.6 Crop/Any Flower/Any Mutant Flower</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>420 Fullness, +25 Armor Pierce</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Stewed Brains</td>
-            <td>Beast Brain + Any Lv. 4, Lv.5, or Lv.6 Crop/Any Flower/Any Mutant Flower / Peanut Oil </td>
+            <td>Beast Brain + Any Lv.4 Crop/Any Lv.5 Crop/Any Lv.6 Crop/Any Flower/Any Mutant Flower / Peanut Oil</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>420 Fullness, +60 Crit</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Stewed Liver</td>
-            <td>Any Offal + Dew/Ice Piece + 3x Any Offal </td>
+            <td>Ice Piece/Dew, Beast Heart/Beast Liver/Beast Brain/Beast Insentines/Kidney/Hoof Sinew/Chunk Of Fat [4]</td>
             <td>Stove II</td>
-            <td>+540 fullness,+50 Armor Pierce 15 mins,+540 fullness,+50 Armor Pierce for 15 mins</td>
+            <td>+540 fullness, +50 Armor Pierce for 15 mins</td>
             <td>Legendary</td>
             <td>-</td>
           </tr>
+           
           
-          <tr>
-            <td>Stewed Liver</td>
-            <td>Ice Piece + Beast Liver[4] </td>
-            <td>Stove II</td>
-            <td>+540 fullness,+50 Armor Pierce 15 mins,+540 fullness,+50 Armor Pierce for 15 mins</td>
-            <td>Legendary</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Stewed Liver</td>
-            <td>Ice Piece/Dew, Beast (Heart/Beast Liver/Beast Brain/Beast Insentines/Kidney/Hoof Sinew/Chunk Of Fat)[4] </td>
-            <td>Stove II</td>
-            <td>+540 fullness,+50 Armor Pierce 15 mins,+540 fullness,+50 Armor Pierce for 15 mins</td>
-            <td>Legendary</td>
-            <td>-</td>
-          </tr>
           
           
           
           <tr>
             <td>Stinky Tofu</td>
-            <td>Hot Pepper + Dung + Peanut </td>
+            <td>Hot Pepper + Dung + Peanut</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>300 Fullness, +4% Crit Damage Dealt</td>
             <td>-</td>
             <td>-</td>
           </tr>
-          
+           
+           
           
           
           
           
           <tr>
-            <td>Stir*Fried Tomato With Eggs</td>
-            <td>Egg White + Tomato + Any Lv. 3 Crop/Any Lv. 4 Crop </td>
+            <td>Stir-Fried Tomato With Eggs</td>
+            <td>Egg White + Tomato + Any Lv.3 Crop/Any Lv.4 Crop</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>420 Fullness, +6% Crit Damage Dealt</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Strange Meat Skewers</td>
-            <td>Any Meat + Any Meat + Coriander Powder </td>
+            <td>Any Meat + Any Meat + Coriander Powder</td>
             <td>Camp II</td>
-            <td>-</td>
+            <td>420 Fullness, 25 Armor Pierce</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Stuffed Eggs</td>
-            <td>Egg White + Dew/Ice Piece + Any Meat </td>
+            <td>Egg White + Dew/Ice Piece + Any Meat</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>300 Fullness, +30 CRIT</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Sweet And Sour Fish</td>
-            <td>Any Wild Fruit + Dew/Ice Piece + Any Meat + Orange </td>
+            <td>Any Wild Fruit + Dew/Ice Piece + Any Meat + Orange grade fish/Red grade fish</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>540 Fullness, +60 <a href="/chimeraland/recipes.html?q=RES">RES</a></td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
           
-          <tr>
-            <td>Sweet And Sour Fish</td>
-            <td>grade fish/Red </td>
-            <td>Stove II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Sweet And Sour Fish</td>
-            <td>grade fish </td>
-            <td>Stove II</td>
-            <td>-</td>
-            <td>-</td>
-            <td>-</td>
-          </tr>
           
           
           
           <tr>
             <td>Sweet And Spicy Venison</td>
-            <td>Moose Meat + Peanut Oil + Any Sweet Sauce + Any Spicy Sauce/Any Spice </td>
+            <td>Moose Meat + Peanut Oil + Any Sweet Sauce + Any Spicy Sauce/Any Spice</td>
             <td>ALL</td>
+            <td>420 Fullness, 80 DEF</td>
             <td>-</td>
             <td>-</td>
-            <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Sweet Vinegar Fish</td>
-            <td>Peanut Oil + Job's Tears Powder + Any Wild Fruit + Purple </td>
+            <td>Peanut Oil + Job's Tears Powder + Any Wild Fruit + Purple grade fish/Orange grade fish/Red grade fish</td>
             <td>Stove II</td>
-            <td>+540 fullness,Temporarily protect from drowning for a long time,Astakat Attendant Recruitment</td>
+            <td>+540 fullness, Temporarily protect from drowning for a long time, Astakat Attendant Recruitment</td>
             <td>Legendary</td>
             <td><a href="#astakat">Watch Tutorial</a></td>
           </tr>
           
-          <tr>
-            <td>Sweet Vinegar Fish</td>
-            <td>grade fish/Orange </td>
-            <td>Stove II</td>
-            <td>+540 fullness,Temporarily protect from drowning for a long time,Astakat Attendant Recruitment</td>
-            <td>Legendary</td>
-            <td><a href="#astakat">Watch Tutorial</a></td>
-          </tr>
+          
+          
           
           <tr>
             <td>Sweet Vinegar Fish</td>
-            <td>grade fish/Red </td>
+            <td>Peanut Oil + Job's Tear Powder + Apple + Any Epic Fish (puple fish)</td>
             <td>Stove II</td>
-            <td>+540 fullness,Temporarily protect from drowning for a long time,Astakat Attendant Recruitment</td>
+            <td>+540 fullness, Temporarily protect from drowning for a long time, Astakat Attendant Recruitment</td>
             <td>Legendary</td>
             <td><a href="#astakat">Watch Tutorial</a></td>
           </tr>
+           
           
-          <tr>
-            <td>Sweet Vinegar Fish</td>
-            <td>grade fish </td>
-            <td>Stove II</td>
-            <td>+540 fullness,Temporarily protect from drowning for a long time,Astakat Attendant Recruitment</td>
-            <td>Legendary</td>
-            <td><a href="#astakat">Watch Tutorial</a></td>
-          </tr>
-          
-          <tr>
-            <td>Sweet Vinegar Fish</td>
-            <td>Peanut Oil + Job's Tear Powder + Apple + Any Epic Fish (puple fish) </td>
-            <td>Stove II</td>
-            <td>+540 fullness,Temporarily protect from drowning for a long time,Astakat Attendant Recruitment</td>
-            <td>Legendary</td>
-            <td><a href="#astakat">Watch Tutorial</a></td>
-          </tr>
           
           
           
           <tr>
             <td>Tomahawk Steak</td>
-            <td>Any Meat + Any Lv. 2 Crop + Any Spice + Any Flower/Any Mutant Flower </td>
+            <td>Any Meat + Any Lv.2 Crop + Any Spice + Any Flower/Any Mutant Flower</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>420 Fullness, +35 Res</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Turtle Soup</td>
-            <td>Gratoise Meat + Dew or Ice Piece + Any Seasoning + Any Lv. 5 Crop/Any Lv. 6 Crop </td>
+            <td>Gratoise Meat + Dew or Ice Piece + Any Seasoning + Any Lv.5 Crop/Any Lv.6 Crop</td>
             <td>Stove II</td>
             <td>-</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Ultimate Meat Dish</td>
-            <td>Gratoise Meat + Any Meat + Any Lv. 4 Crop/Any Lv. 5 Crop/Any Lv. 6 Crop </td>
+            <td>Gratoise Meat + Any Meat + Any Lv.4 Crop/Any Lv.5 Crop/Any Lv.6 Crop</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>420 Fullness, +80 Def</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Vegetable Dumplings</td>
-            <td>Chives + Job's Tears Powder + Any Meat + Any Lv. 6 Crop + Any Meat </td>
+            <td>Chives + Job's Tears Powder + Any Meat + Any Lv.6 Crop + Any Meat</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>660 Fullness, +100 &nbsp;<a href="/chimeraland/recipes.html?q=RES">RES</a>, <a href="/chimeraland/recipes.html?q=focus">Great Focus</a></td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Vegetable Patty</td>
-            <td>Job's Tears Powder + Any Meat + Any Meat + Any Lv. 4 Crop/Any Lv. 5 Crop/Any Lv. 6 Crop </td>
+            <td>Job's Tears Powder + Any Meat + Any Meat + Any Lv.4 Crop/Any Lv.5 Crop/Any Lv.6 Crop</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>540 Fullness, +100 <a href="/chimeraland/recipes.html?q=crit">CRIT</a>, Great <a href="/chimeraland/recipes.html?q=focus">Focus</a></td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Verdura Slushie</td>
-            <td>Ice Piece + Bodhi Fruit </td>
+            <td>Ice Piece + Bodhi Fruit</td>
             <td>Mixer - Jam</td>
             <td>-</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Very Spicy Meat Skewers</td>
-            <td>Any Spice + Any Meat </td>
+            <td>Any Spice + Any Meat</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>300 Fullness, 100 ATK</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Viperfish Slices</td>
-            <td>Viperfish + Lemon Tree Leaf + Viperfish </td>
+            <td>Viperfish + Lemon Tree Leaf + Viperfish</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>540 Fullness, Protect from <a href="#drowning">Drowning</a></td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Watermelon Slushie</td>
-            <td>Ice Piece + Watermelon </td>
+            <td>Ice Piece + Watermelon</td>
             <td>mixer</td>
-            <td>+420 fullness,+15 Heat Resistance</td>
-            <td>Epic</td>
-            <td>-</td>
-          </tr>
-          
-          <tr>
-            <td>Watermelon Slushie</td>
-            <td>Watermelon + Ice Piece </td>
-            <td>mixer</td>
-            <td>+420 fullness,+15 Heat Resistance</td>
+            <td>+420 fullness, Heat Resistance +15</td>
             <td>Epic</td>
             <td>-</td>
           </tr>
           
           
           
+          
           <tr>
-            <td>Wine*Braised Vegetables</td>
-            <td>Fruit & Veg Paste + Peanut Oil + Fruit & Veg Paste + Any Lv. 5 Crop/Any Lv. 6 Crop + Hot Pepper </td>
+            <td>Watermelon Slushie</td>
+            <td>Watermelon + Ice Piece</td>
+            <td>mixer</td>
+            <td>+420 fullness, Heat Resistance +15</td>
+            <td>Epic</td>
+            <td>-</td>
+          </tr>
+           
+          
+          
+          
+          
+          <tr>
+            <td>Wine-Braised Vegetables</td>
+            <td>Fruit & Veggie Paste + Peanut Oil + Fruit & Veggie Paste + Any Lv.5 Crop/Any Lv.6 Crop + Hot Pepper</td>
             <td>Stove II</td>
             <td>-</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Wonton Noodles</td>
-            <td>Job's Tears Powder + Job's Tears Powder + Dew/Ice Piece + Any Lv. 6 Crop + Any Meat </td>
+            <td>Job's Tears Powder + Job's Tears Powder + Dew/Ice Piece + Any Lv.6 Crop + Any Meat</td>
             <td>Stove II</td>
-            <td>-</td>
+            <td>660 Fullness, +10% <a href="/chimeraland/recipes.html?q=crit">CRIT Damage Dealt</a></td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Wormy Soup</td>
-            <td>Insect Ichor + Dew/Ice Piece </td>
+            <td>Insect Ichor + Dew/Ice Piece</td>
             <td>ALL</td>
-            <td>-</td>
+            <td>240 Fullness</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Veggie Paste</td>
-            <td>Apple </td>
+            <td>Apple [1]</td>
             <td>Mixer</td>
-            <td>-</td>
+            <td></td>
             <td>Common</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Sea-Buckthron Mixed Juice</td>
-            <td>Sea-Buckthron + Apple </td>
+            <td>Sea-Buckthron + Apple</td>
             <td>Mixer</td>
-            <td>+180 fullness,+Lv.2 Sandstrom Resistance</td>
+            <td>+180 fullness, Lv.2 Sandstrom Resistance</td>
             <td>-</td>
             <td>-</td>
           </tr>
+           
+          
           
           
           
           <tr>
             <td>Veggie Cake</td>
-            <td>Egg White + Peanut Oil + Veggie Paste + Equinox Flower </td>
+            <td>Egg White + Peanut Oil + Veggie Paste + Equinox Flower</td>
             <td>Stove II</td>
             <td>Windoo Attendant Recruitment</td>
             <td>Epic</td>
             <td><a href="#windoo">Watch Tutorial</a></td>
           </tr>
+           
+          
           
           
           
           <tr>
-            <td>Grilled Mushroom</td>
-            <td>any mushroom </td>
+            <td>Grilled Mushrooms</td>
+            <td>Any Mushroom [1]</td>
             <td>Camp II</td>
             <td>Unlock Stove II</td>
             <td>-</td>
             <td><a href="#unlock-stove-ii">Watch Tutorial</a></td>
           </tr>
+           
           
           
           
-          <tr>
-            <td>Fried Tenderloin</td>
-            <td>Peanut Oil + Fruit Sauce + Any meat + Equinox Flower </td>
-            <td>Stove II</td>
-            <td>+540 fullness,+120 Def 15 mins,Vulorman Attendant Recruitment</td>
-            <td>Legendary</td>
-            <td><a href="#vulorman">Watch Tutorial</a></td>
-          </tr>
           
           <tr>
             <td>Fried Tenderloin</td>
-            <td>Peanut Oil + Any Mixed Sauce + Any Meat + Any Flower/Any Mutant Flower </td>
+            <td>Peanut Oil + Fruit Sauce + Any Meat + Equinox Flower</td>
             <td>Stove II</td>
-            <td>+540 fullness,+120 Def 15 mins,Vulorman Attendant Recruitment</td>
+            <td>+540 fullness, +120 Def 15 mins, Vulorman Attendant Recruitment</td>
             <td>Legendary</td>
             <td><a href="#vulorman">Watch Tutorial</a></td>
           </tr>
           
           
           
+          
+          <tr>
+            <td>Fried Tenderloin</td>
+            <td>Peanut Oil + Any Mixed Sauce + Any Meat + Any Flower/Any Mutant Flower</td>
+            <td>Stove II</td>
+            <td>+540 fullness, +120 Def 15 mins, Vulorman Attendant Recruitment</td>
+            <td>Legendary</td>
+            <td><a href="#vulorman">Watch Tutorial</a></td>
+          </tr>
+           
+          
+          
+          
+          
+          <tr>
+            <td>Hot 'n Sour Jelly</td>
+            <td>Spirit Fox Fur + Spirit Fox Fur + Chimeraland Beast Hide + Spicy Powder + Lemon Tree Leaf/Any Lv.3 Crops</td>
+            <td>Stove III</td>
+            <td>-</td>
+            <td>Legendary</td>
+            <td>-</td>
+          </tr>
+           
+          
+          
+          
+          
+          <tr>
+            <td>Sparrow Beak</td>
+            <td>Red And White Beak + Red And White Beak + Chimeraland Beast Hide + Any Mixed Sauce + Any Blue Grade Fish</td>
+            <td>Stove III</td>
+            <td>-</td>
+            <td>Legendary</td>
+            <td>-</td>
+          </tr>
+           
+          
+          
+          
+          
+          <tr>
+            <td>Hearty Meatball Soup</td>
+            <td>Fine Jade Liquid + Fine Jade Liquid + Chimeraland Beast Hide + Any Mixed Sauce + Any Blue Grade Fish</td>
+            <td>Stove III</td>
+            <td>-</td>
+            <td>Legendary</td>
+            <td>-</td>
+          </tr>
+           
+          
+          
+          
+          
+          <tr>
+            <td>Soy Braised Dragon Bone</td>
+            <td>Ancient Bone + Ancient Bone + Chimeraland Beast Hide + Any Mixed Sauce + Lemon Tree Leaf/Any Lv.3 Crops</td>
+            <td>Stove III</td>
+            <td>-</td>
+            <td>Legendary</td>
+            <td>-</td>
+          </tr>
+           
+          
+          
+          
+          
+          <tr>
+            <td>Exotic Herbal Jelly</td>
+            <td>Stoatle Shell + Stoatle Shell + Chimeraland Beast Hide + Scallion Powder + Lemon Tree Leaf/Any Lv.3 Crops</td>
+            <td>Stove III</td>
+            <td>-</td>
+            <td>Legendary</td>
+            <td>-</td>
+          </tr>
+           
+          
+          
+          
+          
+          <tr>
+            <td>Tasty Wing Tip</td>
+            <td>Nirvana Feather + Nirvana Feather + Chimeraland Beast Hide + Bird Wing + Bird Wing/Bear Paw/Crab Claw Meat</td>
+            <td>Stove III</td>
+            <td>-</td>
+            <td>Legendary</td>
+            <td>-</td>
+          </tr>
+           
+          
+          
+          
+          
+          <tr>
+            <td>Flame Roasted Horn</td>
+            <td>Magnificent Horn + Magnificent Horn + Chimeraland Beast Hide + Spicy Pepper Sauce/Garlic Sauce + Lemon Tree Leaf/Any Lv.3 Crops</td>
+            <td>Stove III</td>
+            <td>-</td>
+            <td>Legendary</td>
+            <td>-</td>
+          </tr>
+           
+          
+          
+          
+          
+          <tr>
+            <td>Overlord Hide Jelly</td>
+            <td>Fortuphant Primal Spirit + Fortuphant Primal Spirit + Chimeraland Beast Hide + Dew/Ice Piece + Corriander/Flat Cabbage/Water Melon</td>
+            <td>Stove III</td>
+            <td>-</td>
+            <td>Legendary</td>
+            <td>-</td>
+          </tr>
+           
+          
+          
+          
+          
+          <tr>
+            <td>Bear Ball Pot</td>
+            <td>Grizzly Primal Spirit + Grizzly Primal Spirit + Chimeraland Beast Hide + Red Hot Sauce/Cucumber Sauce/Fruit Sauce + Corriander/Flat Cabbage/Water Melon</td>
+            <td>Stove III</td>
+            <td>-</td>
+            <td>Legendary</td>
+            <td>-</td>
+          </tr>
+           
+          
+          
+          
+          
+          <tr>
+            <td>Hotstone Icefox Meat</td>
+            <td>Spirit Fox Primal Spirit + Spirit Fox Primal Spirit + Chimeraland Beast Hide + Beast Heart/Beast Liver/Beast Brain/Beast Insentines/Kidney/Hoof Sinew/Chunk Of Fat + Corriander Powder/Five Spice Sauce</td>
+            <td>Stove III</td>
+            <td>-</td>
+            <td>Legendary</td>
+            <td>-</td>
+          </tr>
+           
+          
+          
+          
+          
+          <tr>
+            <td>Stir-Fried Browtelope</td>
+            <td>Bone Sheep Primal Spirit + Bone Sheep Primal Spirit + Chimeraland Beast Hide + Corriander Powder/Five Spice Sauce + Corriander/Flat Cabbage/Water Melon</td>
+            <td>Stove III</td>
+            <td>-</td>
+            <td>Legendary</td>
+            <td>-</td>
+          </tr>
+            
         </tbody>
         <tfoot>
-          <div class="text-center">Resep Makanan Chimeraland</div>
+          <small>table ini dapat di scroll secara horizontal (kanan kiri)</small>
         </tfoot>
       </table>
     </div>
 
     <div>
-      <h2 id="Chimeraland-Cooking-Guide"><a href="#Chimeraland-Cooking-Guide" class="headerlink"
-          title="Chimeraland Cooking Guide"></a>Chimeraland Cooking Guide</h2>
-      <p>Makanan sangat penting di Chimeraland karena memberikan buff dan stat sementara selama durasi. Dengan memasak
-        dan mengonsumsi makanan atau minuman tertentu, Anda akan mendapatkan buff tertentu, dan untuk memasak makanan
-        atau minuman tersebut Anda ingin memahami Resep Makanan Chimeraland.<br>Ada begitu banyak jenis makanan di
-        Chimeraland dan Pada artikel ini, kami akan menjelaskan kepada Anda semua Resep Makanan Chimeraland. jadi tanpa
-        bicara tentang chimeraland lebih lanjut mari kita mulai.</p>
-      <p>Waktu memasak menunjukkan berapa banyak hidangan yang akan Anda dapatkan.</p>
+      <h2 id="Chimeraland-Cooking-Guide">
+        <a href="#Chimeraland-Cooking-Guide" class="headerlink" title="Chimeraland Cooking Guide">Chimeraland Cooking
+          Guide</a>
+      </h2>
+      <p>
+        Makanan sangat penting di Chimeraland karena memberikan buff dan stat
+        sementara selama durasi. Dengan memasak dan mengonsumsi makanan atau
+        minuman tertentu, Anda akan mendapatkan buff tertentu, dan untuk memasak
+        makanan atau minuman tersebut Anda ingin memahami Resep Makanan
+        Chimeraland.<br />Ada begitu banyak jenis makanan di Chimeraland dan
+        Pada artikel ini, kami akan menjelaskan kepada Anda semua Resep Makanan
+        Chimeraland. jadi tanpa bicara tentang chimeraland lebih lanjut mari
+        kita mulai.
+      </p>
+      <h2 id="waktu-memasak"><a href="#waktu-memasak">Waktu Memasak</a></h2>
+      <p>
+        Waktu memasak menunjukkan berapa banyak hidangan yang akan Anda
+        dapatkan.
+      </p>
       <blockquote>
-        <p><strong>Informasi waktu dalam memasak di chimeraland:</strong><br>5 detik = sukses (rate keberhasilan
-          100%)<br>10 detik = Anda akan mendapatkan 2 hidangan, yang mungkin tidak sesuai keinginan Anda (rate
-          keberhasilan 50%)<br>15 detik = gagal (rate keberhasilan 10%)</p>
+        <p>
+          <strong>Informasi waktu dalam memasak di chimeraland:</strong><br />5
+          detik = sukses (rate keberhasilan 100%)<br />10 detik = Anda akan
+          mendapatkan 2 hidangan, yang mungkin tidak sesuai keinginan Anda (rate
+          keberhasilan 50%)<br />15 detik = gagal (rate keberhasilan 10%)
+        </p>
+        <p>
+          Apabila waktu memasak lebih dari <b>5 detik</b>, tekan <b>re-cook</b> <u>hingga waktu memasak menjadi <b>5
+              detik</b></u>
+        </p>
       </blockquote>
-      <p>Untuk waktu memasak. Anda dapat membatalkan sebelum memasak selesai jika Anda tidak ingin lebih dari satu
-        hidangan (10 detik atau lebih), tidak akan dikenakan biaya apa pun. Pada dasarnya, Anda dapat memasak makanan di
-        <strong>Camp</strong> dan <strong>Stove</strong>, tetapi Anda mungkin memerlukan alat tertentu untuk memasak
-        beberapa makanan, misalnya <strong>Mixer</strong> (Anda perlu membukanya di Home Tech (Spirit Orb) dan
-        membuatnya).
+
+      <p>
+        Untuk waktu memasak. Anda dapat membatalkan sebelum memasak selesai jika
+        Anda tidak ingin lebih dari satu hidangan (10 detik atau lebih), tidak
+        akan dikenakan biaya apa pun. Pada dasarnya, Anda dapat memasak makanan
+        di <strong>Camp</strong> dan <strong>Stove</strong>, tetapi Anda mungkin
+        memerlukan alat tertentu untuk memasak beberapa makanan, misalnya
+        <strong>Mixer</strong> (Anda perlu membukanya di Home Tech (Spirit Orb)
+        dan membuatnya).
       </p>
     </div>
 
-    <div>
-      <h3 id="Unlock-Stove-II"><a href="#Unlock-Stove-II" class="headerlink" title="Unlock Stove II"></a>Unlock Stove II
+    <div class="mb-2">
+      <h3 id="Unlock-Stove-Ii">
+        <a href="#Unlock-Stove-Ii" class="headerlink" title="Unlock Stove II"></a>Unlock Stove II
       </h3>
-      <p>Grilled mushroom and Mushroom broth - Chimeraland cooking recipe to activate stove 2</p>
+      <p>
+        Grilled mushroom and Mushroom broth - Chimeraland cooking recipe to
+        activate stove 2
+      </p>
       <blockquote>
-        <p>Menggunakan <strong>Camp 2</strong> untuk unlock <strong>Stove II</strong></p>
-        <p><strong>Camp 2</strong> tidak permanen, bangunan camp II akan hilang dalam 15 menit setelah diletakkan.</p>
+        <p>
+          Menggunakan <strong>Camp 2</strong> untuk unlock
+          <strong>Stove II</strong>
+        </p>
+        <p>
+          <strong>Camp 2</strong> tidak permanen, bangunan camp II akan hilang
+          dalam 15 menit setelah diletakkan.
+        </p>
       </blockquote>
       <p>Recipe :</p>
       <ul>
         <li>grilled mushroom = any mushroom (unlock at camp 2)</li>
-        <li>mushroom broth = any mushroom + any meat + dew/ice piece (unlock at camp 2)</li>
+        <li>
+          mushroom broth = any mushroom + any meat + dew/ice piece (unlock at
+          camp 2)
+        </li>
       </ul>
-      <p>Video Tutorial:<br>Cara unlock <strong>Stove II</strong></p>
+      <p>Video Tutorial:<br />Cara unlock <strong>Stove II</strong></p>
       <div class="video-container">
         <iframe src="https://www.youtube.com/embed/I_QH6jv7rzA" frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" loading="lazy"
           allowfullscreen="true"></iframe>
       </div>
 
-      <h3 id="Windoo"><a href="#Windoo" class="headerlink" title="Windoo"></a>Windoo</h3>
+      <h3 id="Windoo">
+        <a href="#Windoo" class="headerlink" title="Windoo"></a>Windoo
+      </h3>
       <p>Cara mendapatkan attendant <strong>Windoo</strong></p>
       <div class="video-container">
         <iframe src="https://www.youtube.com/embed/P5uAFGr33YA" frameborder="0"
@@ -3074,7 +3147,9 @@ table {
           allowfullscreen="true"></iframe>
       </div>
 
-      <h3 id="Vulorman"><a href="#Vulorman" class="headerlink" title="Vulorman"></a>Vulorman</h3>
+      <h3 id="Vulorman">
+        <a href="#Vulorman" class="headerlink" title="Vulorman"></a>Vulorman
+      </h3>
       <p>Cara mendapatkan attendant <strong>Vulorman</strong></p>
       <div class="video-container">
         <iframe src="https://www.youtube.com/embed/5K-X_U2YwAI" frameborder="0"
@@ -3082,7 +3157,9 @@ table {
           allowfullscreen="true"></iframe>
       </div>
 
-      <h3 id="Astakat"><a href="#Astakat" class="headerlink" title="Astakat"></a>Astakat</h3>
+      <h3 id="Astakat">
+        <a href="#Astakat" class="headerlink" title="Astakat"></a>Astakat
+      </h3>
       <p>Cara mendapatkan attendant <strong>Astakat</strong></p>
       <div class="video-container">
         <iframe src="https://www.youtube.com/embed/NYYoisSMqkM" frameborder="0"
@@ -3090,13 +3167,320 @@ table {
           allowfullscreen="true"></iframe>
       </div>
 
-      <center><i>cooking recipes chimeraland updated january 2022</i> <a href="index.html">Back to index chimeraland</a>
+      <center>
+        <i>cooking recipes chimeraland updated january 2022</i>
+        <a href="index.html">Back to index chimeraland</a>
       </center>
+    </div>
+
+    <div class="mb-2">
+      <h2 id="buffs">Buffs</h2>
+      <h5 id="drowning">Drowning</h5>
+      <p>
+        If your breath reached zero while underwater your hp will decreasing
+        slowly, you can either ride an underwater mount, or eat this <a href="/chimeraland/recipes.html?q=drowning">
+          food
+        </a>
+      </p>
+    </div>
+
+    <div class="text-center m-2" id="terms">
+      
+      
+      <small>Resep Makanan Chimeraland</small>
+      
+      <small>Resep Masakan Chimeraland</small>
+      
+      <small>Cooking Recipes Chimeraland</small>
+      
+      <small>Food Recipes Chimeraland</small>
+      
+      <small>Recipes Chimeraland</small>
+      
+      <small>Cooking Chimeraland</small>
+      
+      <small>Cooking</small>
+      
+      <small>Recipes</small>
+      
     </div>
   </div>
 </div>
-  
-  <div style="padding: 40px">
+
+<!--origin https://www.jellyspotters.com/2022/02/resep-makanan-chimeraland.html-->
+        
+      </div>
+      <div class="col-lg-4 mb-2 d-none d-lg-block" id="sidebar">
+        <div class="card bg-dark text-white mb-2 border border-light">
+          <div class="card-body text-center">
+            <script type='text/javascript' src='https://cdn.trakteer.id/js/embed/trbtn.min.js'></script>
+<script type='text/javascript'>
+  (function () { var trbtnId = trbtn.init('Support Me at Trakteer', '#030303', 'https://trakteer.id/dimaslanjaka', 'https://cdn.trakteer.id/images/embed/trbtn-icon.png', '40'); trbtn.draw(trbtnId); })();
+</script>
+<noscript><a href="https://trakteer.id/dimaslanjaka" target="_blank" rel="nofollow noopener"><img id="wse-buttons-preview" src="https://cdn.trakteer.id/images/embed/trbtn-black-5.png" style="border:0px;height:40px;" alt="Trakteer Saya" height="40"></a></noscript>
+          </div>
+        </div>
+        
+
+<div class="card bg-dark text-white mb-2 border border-light">
+  <div class="card-body">
+    
+    
+    <div class="card-title"><a href="/chimeraland/monsters/horned-bosalo.html" style="text-decoration: none;" class="text-light">Horned Bosalo</a>
+    </div>
+    <p class="card-text">
+      Monster Horned Bosalo
+
+    <div class="accordion bg-dark text-light" id="accordionSnippet0">
+      <div class="accordion-item bg-dark text-light">
+        <h2 class="accordion-header" id="flush-heading0">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapse0" aria-expanded="false" aria-controls="flush-collapse0">
+            View Snippet
+          </button>
+        </h2>
+        <div id="flush-collapse0" class="accordion-collapse collapse" aria-labelledby="flush-heading0"
+          data-bs-parent="#accordionSnippet0">
+          <div class="accordion-body">
+            <pre><code>{
+  "name": "Horned Bosalo",
+  "qty": "GRADE C ATK 52 HP 62 DEF 57",
+  "delicacies": [
+    "Five Venom Serpent Soup",
+    "Moddly Wings Topped Rice",
+    "Dragon Serpent Combo"
+  ],
+  "skill": [],
+  "buff": [
+    "Attributes Conversion Rate 4.0%",
+    "Hp 339"
+  ],
+  "type": "monsters"
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    </p>
+    <a href="/chimeraland/monsters/horned-bosalo.html" class="btn btn-primary">Go View</a>
+  </div>
+</div>
+
+<div class="card bg-dark text-white mb-2 border border-light">
+  <div class="card-body">
+    
+    
+    <div class="card-title"><a href="/chimeraland/recipes.html?q=Ice Block" style="text-decoration: none;" class="text-light">Ice Block</a>
+    </div>
+    <p class="card-text">
+      Recipe Ice Block
+
+    <div class="accordion bg-dark text-light" id="accordionSnippet1">
+      <div class="accordion-item bg-dark text-light">
+        <h2 class="accordion-header" id="flush-heading1">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+            View Snippet
+          </button>
+        </h2>
+        <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1"
+          data-bs-parent="#accordionSnippet1">
+          <div class="accordion-body">
+            <pre><code>{
+  "name": "Ice Block",
+  "recipes": [
+    "Ice Piece + Ice Piece",
+    "Ice Piece [2]"
+  ],
+  "device": "Mixer",
+  "buff": [
+    "+180 fullness",
+    "Heat Resistance +10"
+  ],
+  "grade": "-",
+  "additional": "-",
+  "type": "recipes"
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    </p>
+    <a href="/chimeraland/recipes.html?q=Ice Block" class="btn btn-primary">Go View</a>
+  </div>
+</div>
+
+<div class="card bg-dark text-white mb-2 border border-light">
+  <div class="card-body">
+    
+    
+    <div class="card-title"><a href="/chimeraland/recipes.html?q=Grilled Fish" style="text-decoration: none;" class="text-light">Grilled Fish</a>
+    </div>
+    <p class="card-text">
+      Recipe Grilled Fish
+
+    <div class="accordion bg-dark text-light" id="accordionSnippet2">
+      <div class="accordion-item bg-dark text-light">
+        <h2 class="accordion-header" id="flush-heading2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+            View Snippet
+          </button>
+        </h2>
+        <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2"
+          data-bs-parent="#accordionSnippet2">
+          <div class="accordion-body">
+            <pre><code>{
+  "name": "Grilled Fish",
+  "recipes": [
+    "Any Seasoning + Purple grade fish/Orange grade fish/Red grade fish"
+  ],
+  "device": "Camp II",
+  "buff": [
+    "420 Fullness",
+    "Strenghten Underwater Effect"
+  ],
+  "type": "recipes"
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    </p>
+    <a href="/chimeraland/recipes.html?q=Grilled Fish" class="btn btn-primary">Go View</a>
+  </div>
+</div>
+
+<div class="card bg-dark text-white mb-2 border border-light">
+  <div class="card-body">
+    
+    
+    <div class="card-title"><a href="/chimeraland/monsters/hillord.html" style="text-decoration: none;" class="text-light">Hillord</a>
+    </div>
+    <p class="card-text">
+      Monster Hillord
+
+    <div class="accordion bg-dark text-light" id="accordionSnippet3">
+      <div class="accordion-item bg-dark text-light">
+        <h2 class="accordion-header" id="flush-heading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+            View Snippet
+          </button>
+        </h2>
+        <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3"
+          data-bs-parent="#accordionSnippet3">
+          <div class="accordion-body">
+            <pre><code>{
+  "name": "Hillord",
+  "qty": "GRADE B ATK 60 HP 60 DEF 60",
+  "delicacies": [
+    "Smoked Eleboar Meat",
+    "Crispy Fried Stinger",
+    "Flamebug Meat Claypot"
+  ],
+  "skill": [],
+  "buff": [
+    "Attributes Conversion Rate 4.0%",
+    "Crit 328"
+  ],
+  "type": "monsters"
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    </p>
+    <a href="/chimeraland/monsters/hillord.html" class="btn btn-primary">Go View</a>
+  </div>
+</div>
+
+<div class="card bg-dark text-white mb-2 border border-light">
+  <div class="card-body">
+    
+    
+    <div class="card-title"><a href="/chimeraland/recipes.html?q=Spicy Smoked Meat" style="text-decoration: none;" class="text-light">Spicy Smoked Meat</a>
+    </div>
+    <p class="card-text">
+      Recipe Spicy Smoked Meat
+
+    <div class="accordion bg-dark text-light" id="accordionSnippet4">
+      <div class="accordion-item bg-dark text-light">
+        <h2 class="accordion-header" id="flush-heading4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+            View Snippet
+          </button>
+        </h2>
+        <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4"
+          data-bs-parent="#accordionSnippet4">
+          <div class="accordion-body">
+            <pre><code>{
+  "name": "Spicy Smoked Meat",
+  "recipes": [
+    "Any Meat + Peanut Oil + Spicy Powder"
+  ],
+  "buff": [
+    "420 Fullness",
+    "+60 CRIT"
+  ],
+  "type": "recipes"
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+    </p>
+    <a href="/chimeraland/recipes.html?q=Spicy Smoked Meat" class="btn btn-primary">Go View</a>
+  </div>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div id="disqus_thread">
+  <noscript
+    >Please enable JavaScript to view the
+    <a href="//disqus.com/?ref_noscript"
+      >comments powered by Disqus.</a
+    ></noscript
+  >
+</div>
+<script>
+  (() => {
+    var disqus_shortname = 'dimaslanjaka';
+    var disqus_identifier = location.pathname;
+    const canonical =
+      typeof jQuery !== 'undefined'
+        ? $('[rel="canonical"]').attr('href')
+        : document.querySelector('[rel="canonical"]')
+        ? document.querySelector('[rel="canonical"]').getAttribute('href')
+        : null;
+    //console.log(canonical, 'https://www.webmanajemen.com' + location.pathname);
+    var disqus_url =
+      canonical || 'https://www.webmanajemen.com' + location.pathname;
+    (function () {
+      var dsq = document.createElement('script');
+      dsq.type = 'text/javascript';
+      dsq.async = true;
+      //https://help.disqus.com/en/articles/1717274-adding-comment-count-links-to-your-home-page
+      dsq.id = 'dsq-count-scr';
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js'; // count.js or embed.js
+      document.getElementsByTagName('body')[0].appendChild(dsq);
+    })();
+  })();
+</script>
+
+  </div>
+
+  <div class="container-fluid">
+  <small>cooking recipes chimeraland informations last build date <abbr title="2022-08-31 15:33:23 PM GMT+07:00 WIB">2022-08-31 15:33:23 PM GMT+07:00 WIB</abbr></small>
+</div>
+
+<div class="container-fluid">
   <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
     <p class="col-md-4 mb-0 text-muted">© 2022 WMI, Inc</p>
 
@@ -3150,11 +3534,335 @@ table {
 
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <script src='//raw.githack.com/dimaslanjaka/smartform/master/dist/release/bundle.js'></script>
-  <script src="//cdn.jsdelivr.net/bluebird/latest/bluebird.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="//raw.githack.com/dimaslanjaka/smartform/master/dist/release/bundle.js"></script>
+<script src="//cdn.jsdelivr.net/bluebird/latest/bluebird.min.js"></script>
+<script>
+  $.ajaxPrefilter(function (options) {
+    if (options.crossDomain) {
+      options.url = '//dimaslanjaka-cors.herokuapp.com/' + options.url;
+      options.crossDomain = false;
+    }
+  });
+
+  (() => {
+    // nav active auto
+    const navWrap = Array.from(document.querySelectorAll('.navbar-nav'));
+    const pathnames = location.pathname
+      .split('/')
+      .map((s) => s.trim())
+      .filter((s) => s.length > 0 && !s.includes('.html'));
+    //console.log(pathnames, pathnames[1], pathnames.length);
+    if (pathnames.length >= 1) {
+      navWrap.forEach((wrapper) => {
+        const items = Array.from(wrapper.querySelectorAll('.nav-link'));
+        const detectCurrentPage = items.find(
+          (el) => el.textContent.trim().toLowerCase() === pathnames[1]
+        );
+        if (detectCurrentPage) {
+          wrapper
+            .querySelectorAll('.active')
+            .forEach((el) => el.classList.remove('active'));
+          detectCurrentPage.classList.add('active');
+        }
+      });
+    }
+
+    // click on hash link
+
+    $(document).on('click', 'a[href^="#"]', function (e) {
+      //e.preventDefault();
+
+      /**
+       * @type {string}
+       */
+      const href = ($.attr(this, 'href') || $(this).attr('href'))
+        .replace('#', '')
+        .trim();
+      // skip empty href
+      if (href.length === 0) return;
+      let el = $('#' + href);
+      let offset = el.offset();
+      // fix if destination element id is capitalized
+      if (!offset) {
+        el = $('#' + capitalize(href));
+        offset = el.offset();
+      }
+      // scroll start
+      if (offset) {
+        $('html, body').animate(
+          {
+            scrollTop: offset.top
+          },
+          500
+        );
+      } else {
+        console.log({ href, capitalized: capitalize(href), el, offset });
+      }
+    });
+    /**
+     * capitalize string
+     * @param {string} str
+     * @param {string[]} moreSymbols add more symbols
+     * @returns
+     */
+    function capitalize(str, moreSymbols) {
+      let symbols = ['-', ' '];
+      if (Array.isArray(moreSymbols)) {
+        // concatenate more symbols
+        symbols = [...new Set(symbols.concat(moreSymbols))];
+      }
+      symbols.forEach((symbol) => {
+        str = str
+          .split(symbol)
+          .map((str) => str.charAt(0).toUpperCase() + str.slice(1))
+          .join(symbol);
+      });
+      return str;
+    }
+  })();
+</script>
+  <select id="lang-select" class="form-control" no-save="true">
+  <option value="" selected>Select Language</option>
+  <option value="aa">Afar (Afar)</option>
+  <option value="ab">Abkhazian (Аҧсуа)</option>
+  <option value="af">Afrikaans (Afrikaans)</option>
+  <option value="ak">Akan (Akana)</option>
+  <option value="am">Amharic (አማርኛ)</option>
+  <option value="an">Aragonese (Aragonés)</option>
+  <option value="ar">Arabic (العربية)</option>
+  <option value="as">Assamese (অসমীয়া)</option>
+  <option value="av">Avar (Авар)</option>
+  <option value="ay">Aymara (Aymar)</option>
+  <option value="az">Azerbaijani (Azərbaycanca / آذربايجان)</option>
+  <option value="ba">Bashkir (Башҡорт)</option>
+  <option value="be">Belarusian (Беларуская)</option>
+  <option value="bg">Bulgarian (Български)</option>
+  <option value="bh">Bihari (भोजपुरी)</option>
+  <option value="bi">Bislama (Bislama)</option>
+  <option value="bm">Bambara (Bamanankan)</option>
+  <option value="bn">Bengali (বাংলা)</option>
+  <option value="bo">Tibetan (བོད་ཡིག / Bod skad)</option>
+  <option value="br">Breton (Brezhoneg)</option>
+  <option value="bs">Bosnian (Bosanski)</option>
+  <option value="ca">Catalan (Català)</option>
+  <option value="ce">Chechen (Нохчийн)</option>
+  <option value="ch">Chamorro (Chamoru)</option>
+  <option value="co">Corsican (Corsu)</option>
+  <option value="cr">Cree (Nehiyaw)</option>
+  <option value="cs">Czech (Čeština)</option>
+  <option value="cu">
+    Old Church Slavonic / Old Bulgarian (словѣньскъ / slověnĭskŭ)
+  </option>
+  <option value="cv">Chuvash (Чăваш)</option>
+  <option value="cy">Welsh (Cymraeg)</option>
+  <option value="da">Danish (Dansk)</option>
+  <option value="de">German (Deutsch)</option>
+  <option value="dv">Divehi (ދިވެހިބަސް)</option>
+  <option value="dz">Dzongkha (ཇོང་ཁ)</option>
+  <option value="ee">Ewe (Ɛʋɛ)</option>
+  <option value="el">Greek (Ελληνικά)</option>
+  <option value="en">English (English)</option>
+  <option value="eo">Esperanto (Esperanto)</option>
+  <option value="es">Spanish (Español)</option>
+  <option value="et">Estonian (Eesti)</option>
+  <option value="eu">Basque (Euskara)</option>
+  <option value="fa">Persian (فارسی)</option>
+  <option value="ff">Peul (Fulfulde)</option>
+  <option value="fi">Finnish (Suomi)</option>
+  <option value="fj">Fijian (Na Vosa Vakaviti)</option>
+  <option value="fo">Faroese (Føroyskt)</option>
+  <option value="fr">French (Français)</option>
+  <option value="fy">West Frisian (Frysk)</option>
+  <option value="ga">Irish (Gaeilge)</option>
+  <option value="gd">Scottish Gaelic (Gàidhlig)</option>
+  <option value="gl">Galician (Galego)</option>
+  <option value="gn">Guarani (Avañe'ẽ)</option>
+  <option value="gu">Gujarati (ગુજરાતી)</option>
+  <option value="gv">Manx (Gaelg)</option>
+  <option value="ha">Hausa (هَوُسَ)</option>
+  <option value="he">Hebrew (עברית)</option>
+  <option value="hi">Hindi (हिन्दी)</option>
+  <option value="ho">Hiri Motu (Hiri Motu)</option>
+  <option value="hr">Croatian (Hrvatski)</option>
+  <option value="ht">Haitian (Krèyol ayisyen)</option>
+  <option value="hu">Hungarian (Magyar)</option>
+  <option value="hy">Armenian (Հայերեն)</option>
+  <option value="hz">Herero (Otsiherero)</option>
+  <option value="ia">Interlingua (Interlingua)</option>
+  <option value="id">Indonesian (Bahasa Indonesia)</option>
+  <option value="ie">Interlingue (Interlingue)</option>
+  <option value="ig">Igbo (Igbo)</option>
+  <option value="ii">Sichuan Yi (ꆇꉙ / 四川彝语)</option>
+  <option value="ik">Inupiak (Iñupiak)</option>
+  <option value="io">Ido (Ido)</option>
+  <option value="is">Icelandic (Íslenska)</option>
+  <option value="it">Italian (Italiano)</option>
+  <option value="iu">Inuktitut (ᐃᓄᒃᑎᑐᑦ)</option>
+  <option value="ja">Japanese (日本語)</option>
+  <option value="jv">Javanese (Basa Jawa)</option>
+  <option value="ka">Georgian (ქართული)</option>
+  <option value="kg">Kongo (KiKongo)</option>
+  <option value="ki">Kikuyu (Gĩkũyũ)</option>
+  <option value="kj">Kuanyama (Kuanyama)</option>
+  <option value="kk">Kazakh (Қазақша)</option>
+  <option value="kl">Greenlandic (Kalaallisut)</option>
+  <option value="km">Cambodian (ភាសាខ្មែរ)</option>
+  <option value="kn">Kannada (ಕನ್ನಡ)</option>
+  <option value="ko">Korean (한국어)</option>
+  <option value="kr">Kanuri (Kanuri)</option>
+  <option value="ks">Kashmiri (कश्मीरी / كشميري)</option>
+  <option value="ku">Kurdish (Kurdî / كوردی)</option>
+  <option value="kv">Komi (Коми)</option>
+  <option value="kw">Cornish (Kernewek)</option>
+  <option value="ky">Kyrgyz (Кыргызча)</option>
+  <option value="la">Latin (Latina)</option>
+  <option value="lb">Luxembourgish (Lëtzebuergesch)</option>
+  <option value="lg">Ganda (Luganda)</option>
+  <option value="li">Limburgian (Limburgs)</option>
+  <option value="ln">Lingala (Lingála)</option>
+  <option value="lo">Laotian (ລາວ / Pha xa lao)</option>
+  <option value="lt">Lithuanian (Lietuvių)</option>
+  <option value="lu">Luba-Katanga (Tshiluba)</option>
+  <option value="lv">Latvian (Latviešu)</option>
+  <option value="mg">Malagasy (Malagasy)</option>
+  <option value="mh">Marshallese (Kajin Majel / Ebon)</option>
+  <option value="mi">Maori (Māori)</option>
+  <option value="mk">Macedonian (Македонски)</option>
+  <option value="ml">Malayalam (മലയാളം)</option>
+  <option value="mn">Mongolian (Монгол)</option>
+  <option value="mo">Moldovan (Moldovenească)</option>
+  <option value="mr">Marathi (मराठी)</option>
+  <option value="ms">Malay (Bahasa Melayu)</option>
+  <option value="mt">Maltese (bil-Malti)</option>
+  <option value="my">Burmese (မြန်မာစာ)</option>
+  <option value="na">Nauruan (Dorerin Naoero)</option>
+  <option value="nb">Norwegian Bokmål (Norsk bokmål)</option>
+  <option value="nd">North Ndebele (Sindebele)</option>
+  <option value="ne">Nepali (नेपाली)</option>
+  <option value="ng">Ndonga (Oshiwambo)</option>
+  <option value="nl">Dutch (Nederlands)</option>
+  <option value="nn">Norwegian Nynorsk (Norsk nynorsk)</option>
+  <option value="no">Norwegian (Norsk)</option>
+  <option value="nr">South Ndebele (isiNdebele)</option>
+  <option value="nv">Navajo (Diné bizaad)</option>
+  <option value="ny">Chichewa (Chi-Chewa)</option>
+  <option value="oc">Occitan (Occitan)</option>
+  <option value="oj">Ojibwa (ᐊᓂᔑᓈᐯᒧᐎᓐ / Anishinaabemowin)</option>
+  <option value="om">Oromo (Oromoo)</option>
+  <option value="or">Oriya (ଓଡ଼ିଆ)</option>
+  <option value="os">Ossetian / Ossetic (Иронау)</option>
+  <option value="pa">Panjabi / Punjabi (ਪੰਜਾਬੀ / पंजाबी / پنجابي)</option>
+  <option value="pi">Pali (Pāli / पाऴि)</option>
+  <option value="pl">Polish (Polski)</option>
+  <option value="ps">Pashto (پښتو)</option>
+  <option value="pt">Portuguese (Português)</option>
+  <option value="qu">Quechua (Runa Simi)</option>
+  <option value="rm">Raeto Romance (Rumantsch)</option>
+  <option value="rn">Kirundi (Kirundi)</option>
+  <option value="ro">Romanian (Română)</option>
+  <option value="ru">Russian (Русский)</option>
+  <option value="rw">Rwandi (Kinyarwandi)</option>
+  <option value="sa">Sanskrit (संस्कृतम्)</option>
+  <option value="sc">Sardinian (Sardu)</option>
+  <option value="sd">Sindhi (सिनधि)</option>
+  <option value="se">Northern Sami (Sámegiella)</option>
+  <option value="sg">Sango (Sängö)</option>
+  <option value="sh">Serbo-Croatian (Srpskohrvatski / Српскохрватски)</option>
+  <option value="si">Sinhalese (සිංහල)</option>
+  <option value="sk">Slovak (Slovenčina)</option>
+  <option value="sl">Slovenian (Slovenščina)</option>
+  <option value="sm">Samoan (Gagana Samoa)</option>
+  <option value="sn">Shona (chiShona)</option>
+  <option value="so">Somalia (Soomaaliga)</option>
+  <option value="sq">Albanian (Shqip)</option>
+  <option value="sr">Serbian (Српски)</option>
+  <option value="ss">Swati (SiSwati)</option>
+  <option value="st">Southern Sotho (Sesotho)</option>
+  <option value="su">Sundanese (Basa Sunda)</option>
+  <option value="sv">Swedish (Svenska)</option>
+  <option value="sw">Swahili (Kiswahili)</option>
+  <option value="ta">Tamil (தமிழ்)</option>
+  <option value="te">Telugu (తెలుగు)</option>
+  <option value="tg">Tajik (Тоҷикӣ)</option>
+  <option value="th">Thai (ไทย / Phasa Thai)</option>
+  <option value="ti">Tigrinya (ትግርኛ)</option>
+  <option value="tk">Turkmen (Туркмен / تركمن)</option>
+  <option value="tl">Tagalog / Filipino (Tagalog)</option>
+  <option value="tn">Tswana (Setswana)</option>
+  <option value="to">Tonga (Lea Faka-Tonga)</option>
+  <option value="tr">Turkish (Türkçe)</option>
+  <option value="ts">Tsonga (Xitsonga)</option>
+  <option value="tt">Tatar (Tatarça)</option>
+  <option value="tw">Twi (Twi)</option>
+  <option value="ty">Tahitian (Reo Mā`ohi)</option>
+  <option value="ug">Uyghur (Uyƣurqə / ئۇيغۇرچە)</option>
+  <option value="uk">Ukrainian (Українська)</option>
+  <option value="ur">Urdu (اردو)</option>
+  <option value="uz">Uzbek (Ўзбек)</option>
+  <option value="ve">Venda (Tshivenḓa)</option>
+  <option value="vi">Vietnamese (Tiếng Việt)</option>
+  <option value="vo">Volapük (Volapük)</option>
+  <option value="wa">Walloon (Walon)</option>
+  <option value="wo">Wolof (Wollof)</option>
+  <option value="xh">Xhosa (isiXhosa)</option>
+  <option value="yi">Yiddish (ייִדיש)</option>
+  <option value="yo">Yoruba (Yorùbá)</option>
+  <option value="za">Zhuang (Cuengh / Tôô / 壮语)</option>
+  <option value="zh">Chinese (中文)</option>
+  <option value="zu">Zulu (isiZulu)</option>
+</select>
+
+<style>
+  #lang-select {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+    z-index: 1000;
+  }
+</style>
+<script>
+  (() => {
+    const sel = $('#lang-select');
+    if (/translate.goog/.test(location.host)) {
+      sel.remove();
+    } else {
+      if (jQuery.fn.select2) {
+        jQuery.fn.select2.defaults.set('theme', 'bootstrap');
+        sel.select2();
+      }
+
+      sel.on('change', (e) => {
+        e.preventDefault();
+        const code = sel.val() || sel.find(':selected').val() || '';
+        const canonical = $('[rel="canonical"]').attr('href');
+        if (
+          typeof canonical === 'string' &&
+          canonical.length > 0 &&
+          code.length > 0
+        ) {
+          const url = location.host.includes(':') ? canonical : location.href;
+          const translateUrl = `http://translate.google.com/translate?hl=${code}&sl=id&u=${url}`;
+          const win = window.open(translateUrl, 'translate');
+          win.focus();
+        }
+      });
+    }
+  })();
+</script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106238155-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-106238155-1');
+</script>
+
   
   <link rel="stylesheet" href="//cdn.datatables.net/1.12.1/css/dataTables.bootstrap5.min.css" />
 <link rel="stylesheet" href="//cdn.datatables.net/responsive/1.0.4/css/dataTables.responsive.css" />
@@ -3163,22 +3871,41 @@ table {
 <script src="//cdn.datatables.net/responsive/1.0.4/js/dataTables.responsive.js"></script>
   
   
-  <script>$(document).ready(function () {
-  $('#example').DataTable();
+  <script>
+jQuery(function ($) {
+  const table = $('#recipe-table').DataTable({
+    paging: true,
+    pagingType: 'full',
+    //ordering: false,
+    info: false
+  });
+
+  setTimeout(() => {
+    const queryString = window.location.search;
+    const parameters = new URLSearchParams(queryString);
+    const keyword = parameters.get('q');
+    //console.log({ keyword, queryString, parameters });
+    if (typeof keyword === 'string' && keyword.length > 0) {
+      $('#recipe-table_filter input').val(keyword.trim());
+      $('#recipe-table_filter input').trigger('change');
+      table.search(keyword.trim()).draw();
+    }
+  }, 1000);
 });
 
-$(document).on('click', 'a[href^="#"]', function (event) {
-  event.preventDefault();
-
-  $('html, body').animate(
-    {
-      scrollTop: $($.attr(this, 'href')).offset().top
-    },
-    500
-  );
-});
 </script>
   
+  <!--script from /public/live.js-->
+  <script>
+    if (location.port === '4000') {
+      const live = document.createElement('script');
+      live.src = '/live.js';
+      //live.onload = () => console.log('live loaded');
+      live.type = 'text/javascript';
+      live.async = true;
+      document.getElementsByTagName('body')[0].appendChild(live);
+    }
+  </script>
 </body>
 
 </html>
