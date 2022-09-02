@@ -26,6 +26,6 @@
   },
   "devDependencies": {
     "@types/jquery": "^3.5.14",
-    "@types/toastr": "^2.1.39"
+    "@types/toastr": "^2.1.40"
   }
 }
