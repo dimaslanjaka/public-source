@@ -1,5 +1,7 @@
 ---
 title: adblock detector
+date: 2022-10-10T16:15:00+0700
+updated: 2022-10-10T16:15:00+0700
 ---
 
 # AdBlock Detector
@@ -118,6 +120,8 @@ This adblock detector script will continue to be updated as the browser api deve
 | hexo-seo | https://github.com/dimaslanjaka/hexo-seo |
 | hexo-adsense | https://github.com/dimaslanjaka/hexo-adsense |
 | hexo-blogger-xml | https://github.com/dimaslanjaka/hexo-blogger-xml |
+
+
 
 <!-- include content.html -->
 <!-- css style.css -->

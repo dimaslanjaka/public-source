@@ -9,3 +9,4 @@ yarn.lock
 # olds and backups
 *-old
 *-backup
+tmp-*
