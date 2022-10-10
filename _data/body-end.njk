@@ -13,7 +13,7 @@
     <div class="ykth-body">
       <p>
         We have detected that you are using adblock in your browser on page
-        <b>{{ page.title }}</b> you've visited.
+        <b>{% if page.title %}{{ page.title }}{% elif title %}{{ title }}{% endif %}</b> you've visited.
       </p>
       <p>
         Our website is made possible by displaying online advertisements to our
