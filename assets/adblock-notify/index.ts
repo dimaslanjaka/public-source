@@ -1,10 +1,13 @@
 /** index.html builder */
-
 import ejs from 'ejs';
 import fm from 'front-matter';
 import { readFileSync, rmSync, writeFileSync } from 'fs';
 import { buildPost, parsePost, postMeta } from 'hexo-post-parser';
 import MarkdownIt from 'markdown-it';
+import MarkdownItMark from 'markdown-it-mark';
+import MarkdownItUp from 'markdown-it-sup';
+import MarkdownItTaskList from 'markdown-it-task-lists';
+import 'nodejs-package-types/typings/index';
 import { join } from 'path';
 import { getConfig } from 'static-blog-generator';
 
@@ -16,7 +19,10 @@ const md = MarkdownIt({
   html: true,
   linkify: true,
   typographer: true
-});
+})
+  .use(MarkdownItUp)
+  .use(MarkdownItMark)
+  .use(MarkdownItTaskList, { enabled: true });
 const markdownResult = md.render(parsed.body);
 
 const rebuild = buildPost({
