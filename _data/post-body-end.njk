@@ -1,0 +1,7 @@
+<div id="keywords">
+  {% if post.keywords %}
+  {{ post.keywords | join(", ") }}
+  {% elif post.keyword %}
+  {{ post.keyword | join(", ") }}
+  {% endif %}
+</div>
