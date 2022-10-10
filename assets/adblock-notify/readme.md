@@ -96,6 +96,13 @@ This adblock detector script will continue to be updated as the browser api deve
 | Safelinkify | https://github.com/dimaslanjaka/safelink |
 | Form Saver | https://github.com/dimaslanjaka/smartform |
 | Google News Sitemap Generator | https://github.com/dimaslanjaka/google-news-sitemap |
-| hexo-generator-redirect (forked -> upgrade -> modified) | https://github.com/dimaslanjaka/hexo-generator-redirect |
 | Sitemap Crawler (forked -> upgrade -> modified) | https://github.com/dimaslanjaka/static-blog-generator-hexo/tree/master/packages/sitemap-crawler |
+### Gulp Plugins
+| Package name | Repository |
+| :--- | :--- |
 | gulp-dom (forked -> upgrade -> modified) | https://github.com/dimaslanjaka/static-blog-generator-hexo/tree/master/packages/gulp-dom |
+### Hexo Plugins
+| Package name | Repository |
+| :--- | :--- |
+| hexo-post-parser | https://github.com/dimaslanjaka/hexo-post-parser |
+| hexo-generator-redirect (forked -> upgrade -> modified) | https://github.com/dimaslanjaka/hexo-generator-redirect |
