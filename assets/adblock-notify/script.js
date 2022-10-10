@@ -2,18 +2,7 @@
 /* global adblock */
 /// <reference path="./adblock.js" />
 
-fetch(
-  '//raw.githubusercontent.com/dimaslanjaka/public-source/master/assets/adblock-notify/content.html'
-)
-  .then((res) => res.text())
-  .then((content) => {
-    const div = document.createElement('div');
-    div.innerHTML = content;
-    document.body.appendChild(div);
-    setTimeout(() => {
-      new adblock().ajaxMethod().then(hideNotifAdblock).catch(showNotifAdblock);
-    }, 500);
-  });
+new adblock().ajaxMethod().then(hideNotifAdblock).catch(showNotifAdblock);
 
 var ykrd1 =
   Math.random().toString(36).substring(2, 15) +
