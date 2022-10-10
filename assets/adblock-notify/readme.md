@@ -88,3 +88,9 @@ This adblock detector script will continue to be updated as the browser api deve
 <!-- this script from script.js -->
 <script src="https://raw.githack.com/dimaslanjaka/public-source/master/assets/adblock-notify/script.js"></script>
 ```
+
+## Our libraries
+| Package name | Repository |
+| :--- | :--- |
+| AdBlock Detector Notify | |
+| Safelinkify | |
