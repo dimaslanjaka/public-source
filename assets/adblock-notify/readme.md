@@ -97,12 +97,23 @@ This adblock detector script will continue to be updated as the browser api deve
 | Form Saver | https://github.com/dimaslanjaka/smartform |
 | Google News Sitemap Generator | https://github.com/dimaslanjaka/google-news-sitemap |
 | Sitemap Crawler (forked -> upgrade -> modified) | https://github.com/dimaslanjaka/static-blog-generator-hexo/tree/master/packages/sitemap-crawler |
+| GitHub Command Helper | https://github.com/dimaslanjaka/git-command-helper |
+| Optimized NodeJS Package Types | https://github.com/dimaslanjaka/nodejs-package-types |
+| Public Proxies Grabber | https://github.com/dimaslanjaka/proxies-grabber |
+| NodeJS Persistent Cache (forked -> upgrade -> modified) | https://github.com/dimaslanjaka/persistent-cache/tree/improve2 |
+| Javascript Prototype Extender Full Typestrong Integrated | https://github.com/dimaslanjaka/js-prototypes |
+| PHP RSS Parser | https://github.com/dimaslanjaka/rss-parser |
+
 ### Gulp Plugins
 | Package name | Repository |
 | :--- | :--- |
 | gulp-dom (forked -> upgrade -> modified) | https://github.com/dimaslanjaka/static-blog-generator-hexo/tree/master/packages/gulp-dom |
+
 ### Hexo Plugins
 | Package name | Repository |
 | :--- | :--- |
 | hexo-post-parser | https://github.com/dimaslanjaka/hexo-post-parser |
 | hexo-generator-redirect (forked -> upgrade -> modified) | https://github.com/dimaslanjaka/hexo-generator-redirect |
+| hexo-seo | https://github.com/dimaslanjaka/hexo-seo |
+| hexo-adsense | https://github.com/dimaslanjaka/hexo-adsense |
+| hexo-blogger-xml | https://github.com/dimaslanjaka/hexo-blogger-xml |
