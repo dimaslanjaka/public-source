@@ -103,6 +103,7 @@ This adblock detector script will continue to be updated as the browser api deve
 | NodeJS Persistent Cache (forked -> upgrade -> modified) | https://github.com/dimaslanjaka/persistent-cache/tree/improve2 |
 | Javascript Prototype Extender Full Typestrong Integrated | https://github.com/dimaslanjaka/js-prototypes |
 | PHP RSS Parser | https://github.com/dimaslanjaka/rss-parser |
+| PHP Currency Converter | https://github.com/dimaslanjaka/currency-converter.git |
 
 ### Gulp Plugins
 | Package name | Repository |
