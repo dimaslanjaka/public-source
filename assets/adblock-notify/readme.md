@@ -87,6 +87,8 @@ This adblock detector script will continue to be updated as the browser api deve
     <!-- End Condition When JS Disable -->
   </div>
 </div>
+<!-- this css from style.css -->
+<link rel="stylesheet" href="https://raw.githack.com/dimaslanjaka/public-source/master/assets/adblock-notify/style.css" />
 <!-- this script from script.js -->
 <script src="https://raw.githack.com/dimaslanjaka/public-source/master/assets/adblock-notify/script.js"></script>
 ```

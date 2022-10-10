@@ -86,6 +86,8 @@
     &lt;!-- End Condition When JS Disable --&gt;
   &lt;/div&gt;
 &lt;/div&gt;
+&lt;!-- this css from style.css --&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://raw.githack.com/dimaslanjaka/public-source/master/assets/adblock-notify/style.css&quot; /&gt;
 &lt;!-- this script from script.js --&gt;
 &lt;script src=&quot;https://raw.githack.com/dimaslanjaka/public-source/master/assets/adblock-notify/script.js&quot;&gt;&lt;/script&gt;
 </code></pre>
@@ -283,7 +285,7 @@ div[class^=ykwrp_] {
   z-index: inherit;
 }
 
-@media (min-height: 768px) {
+@media (min-width: 768px) {
   .ykth-inner {
     border: 1px solid rgb(153, 153, 153);
     border-radius: 5px;
@@ -291,6 +293,11 @@ div[class^=ykwrp_] {
     -webkit-box-shadow: -2px -1px 15px 7px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: -3px -2px 30px 14px rgba(0, 0, 0, 0.425);
     box-shadow: -4px -3px 45px 21px rgba(0, 0, 0, 0.35);
+    width: 80%;
+    height: auto;
+    top: 20%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 div[class^=ykwrp_]::before,
