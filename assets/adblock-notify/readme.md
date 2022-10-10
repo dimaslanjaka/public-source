@@ -1,3 +1,7 @@
+---
+title: adblock detector
+---
+
 # AdBlock Detector
 created by: Dimas Lanjaka <dimaslanjaka@gmail.com>
 
