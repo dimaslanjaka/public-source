@@ -37,12 +37,18 @@ class adblock {
   }
 }
 
-const adblockStart = () =>
-  new adblock().ajaxMethod().then(hideNotifAdblock).catch(showNotifAdblock);
-
-fetch('/assets/adblock-notify/content.html')
+fetch(
+  '//raw.githubusercontent.com/dimaslanjaka/public-source/master/assets/adblock-notify/content.html'
+)
   .then((res) => res.text())
-  .then(console.log);
+  .then((content) => {
+    const div = document.createElement('div');
+    div.innerHTML = content;
+    document.body.appendChild(div);
+    setTimeout(() => {
+      new adblock().ajaxMethod().then(hideNotifAdblock).catch(showNotifAdblock);
+    }, 500);
+  });
 
 var ykrd1 =
   Math.random().toString(36).substring(2, 15) +
