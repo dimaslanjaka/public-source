@@ -75,5 +75,7 @@
 <script src="/assets/adblock-notify/script.js"></script>
 <link rel="stylesheet" href="/assets/adblock-notify/style.css" />
 <script>
-  document.getElementById('adblock-page-title').textContent = document.title;
+  setTimeout(() => {
+    document.getElementById('adblock-page-title').innerHTML = document.title;
+  }, 1000);
 </script>

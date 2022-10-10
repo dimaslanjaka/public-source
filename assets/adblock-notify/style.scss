@@ -23,18 +23,16 @@ div[class^='ykwrp_'] {
   z-index: inherit;
 }
 
-@media (min-width: 1025px) and (min-height: 1000px) {
-  /* big landscape tablets, laptops, and desktops */
-  div[class^='ykwrp_'] {
-    width: 95%;
-    top: 50%;
-
+@media (min-height: 768px) {
+  .ykth-inner {
     border: 1px solid rgb(153, 153, 153);
     border-radius: 5px;
     /* offset-x | offset-y | blur-radius | spread-radius | color */
     -webkit-box-shadow: -2px -1px 15px 7px rgba(0, 0, 0, 0.5);
     -moz-box-shadow: -3px -2px 30px 14px rgba(0, 0, 0, 0.425);
     box-shadow: -4px -3px 45px 21px rgba(0, 0, 0, 0.35);
+    width: 80%;
+    height: auto;
   }
 }
 
@@ -75,6 +73,7 @@ div[class^='ykwrp_']::after,
     font-size: 21px;
     font-weight: 700;
     font-style: normal;
+    color: rgb(255, 255, 255);
   }
 }
 
