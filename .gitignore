@@ -4,6 +4,8 @@ node_modules/
 yarn.lock
 #package-lock.json
 
+!assets/adblock-notify
+
 # olds and backups
 *-old
 *-backup
