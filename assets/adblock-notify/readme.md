@@ -8,3 +8,5 @@ preview: [https://raw.githack.com/dimaslanjaka/public-source/master/assets/adblo
 nunjucks example: [https://github.com/dimaslanjaka/public-source/blob/master/_data/body-end.njk](https://github.com/dimaslanjaka/public-source/blob/master/_data/body-end.njk)
 
 made for [https://webmanajemen.com](https://webmanajemen.com).
+
+This adblock detector script will continue to be updated as the browser api develops. Be sure to source from here via [raw.githack.com](https://raw.githack.com).
