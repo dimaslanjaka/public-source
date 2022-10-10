@@ -13,7 +13,11 @@
     <div class="ykth-body">
       <p>
         We have detected that you are using adblock in your browser on page
-        <b>{% if page.title %}{{ page.title }}{% elif title %}{{ title }}{% endif %}</b> you've visited.
+        <b id="adblock-page-title"
+          >{% if page.title %}{{ page.title }}{% elif title %}{{ title }}{%
+          endif %}</b
+        >
+        you've visited.
       </p>
       <p>
         Our website is made possible by displaying online advertisements to our
@@ -70,3 +74,6 @@
 
 <script src="/assets/adblock-notify/script.js"></script>
 <link rel="stylesheet" href="/assets/adblock-notify/style.css" />
+<script>
+  document.getElementById('adblock-page-title').textContent = document.title;
+</script>
