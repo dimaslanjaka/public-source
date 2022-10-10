@@ -7,6 +7,10 @@ created by: Dimas Lanjaka <dimaslanjaka@gmail.com>
 
 license: MIT
 
+todo in the future:
+- [ ] Build for react
+- [x] Build for any website
+
 demo:
 - [Development](https://raw.githack.com/dimaslanjaka/public-source/master/assets/adblock-notify/index.html)
 - [Production](https://www.webmanajemen.com/The%20Legend%20Of%20Neverland/Quiz.html)
