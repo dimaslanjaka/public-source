@@ -92,5 +92,6 @@ This adblock detector script will continue to be updated as the browser api deve
 ## Our libraries
 | Package name | Repository |
 | :--- | :--- |
-| AdBlock Detector Notify | |
-| Safelinkify | |
+| AdBlock Detector Notify | https://github.com/dimaslanjaka/public-source/blob/master/assets/adblock-notify |
+| Safelinkify | https://github.com/dimaslanjaka/safelink |
+| Form Saver | https://github.com/dimaslanjaka/smartform |
