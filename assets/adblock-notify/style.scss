@@ -1,22 +1,21 @@
 /* default position */
-div[class^=ykwrp_] {
+div[class^='ykwrp_'] {
   z-index: 100005;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: fixed;
 }
-
 /* for mobile */
 @media (max-width: 480px) {
-  div[class^=ykwrp_] {
+  div[class^='ykwrp_'] {
     width: 100%;
     height: 100%;
   }
 }
 /* for tablet or horizontal rotate mobile */
 @media (min-width: 481px) {
-  div[class^=ykwrp_] {
+  div[class^='ykwrp_'] {
     width: 95%;
     top: 20%;
     border: 1px solid rgb(153, 153, 153);
@@ -29,7 +28,7 @@ div[class^=ykwrp_] {
 }
 /* for desktop */
 @media (min-width: 1081px) {
-  div[class^=ykwrp_] {
+  div[class^='ykwrp_'] {
     width: 95%;
     top: 50%;
     border: 1px solid rgb(153, 153, 153);
@@ -40,12 +39,13 @@ div[class^=ykwrp_] {
     box-shadow: -4px -3px 45px 21px rgba(0, 0, 0, 0.35);
   }
 }
+
 .ykth-hide {
   display: none;
 }
 
 .ykth-inner {
-  font-family: "Open Sans", "Roboto", Segoe UI, sans-serif;
+  font-family: 'Open Sans', 'Roboto', Segoe UI, sans-serif;
   background: rgb(255, 255, 255);
   color: rgb(29, 29, 29);
   width: 100%;
@@ -55,8 +55,8 @@ div[class^=ykwrp_] {
   z-index: inherit;
 }
 
-div[class^=ykwrp_]::before,
-div[class^=ykwrp_]::after,
+div[class^='ykwrp_']::before,
+div[class^='ykwrp_']::after,
 #ykth::before,
 #ykth::after {
   clear: both;
@@ -66,33 +66,33 @@ div[class^=ykwrp_]::after,
   background: #d61d1d;
   color: rgb(255, 255, 255);
   padding: 20px;
-}
-.ykth-head b {
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.ykth-head p {
-  margin: 0 0 0 35px;
-  font-size: 14px;
-}
-.ykth-head svg {
-  float: left;
-  margin: 0 9px 0 0;
-  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) 7;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
-}
-.ykth-head i {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  cursor: pointer;
-  line-height: 13px;
-  font-size: 21px;
-  font-weight: 700;
-  font-style: normal;
+  b {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  p {
+    margin: 0 0 0 35px;
+    font-size: 14px;
+  }
+  svg {
+    float: left;
+    margin: 0 9px 0 0;
+    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) 7;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  i {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    cursor: pointer;
+    line-height: 13px;
+    font-size: 21px;
+    font-weight: 700;
+    font-style: normal;
+  }
 }
 
 .ykth-body {
@@ -100,22 +100,31 @@ div[class^=ykwrp_]::after,
   font-size: 100%;
   line-height: 1.7;
   text-align: left;
-}
-.ykth-body p {
-  margin: 0 0 10px;
+
+  p {
+    margin: 0 0 10px;
+  }
 }
 
 @keyframes shake {
-  10%, 90% {
+  10%,
+  90% {
     transform: translate3d(-1px, 0, 0);
   }
-  20%, 80% {
+
+  20%,
+  80% {
     transform: translate3d(2px, 0, 0);
   }
-  30%, 50%, 70% {
+
+  30%,
+  50%,
+  70% {
     transform: translate3d(-4px, 0, 0);
   }
-  40%, 60% {
+
+  40%,
+  60% {
     transform: translate3d(4px, 0, 0);
   }
 }
