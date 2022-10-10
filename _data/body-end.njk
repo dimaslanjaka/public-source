@@ -13,10 +13,15 @@
     <div class="ykth-body">
       <p>
         We have detected that you are using adblock in your browser on page
-        <b id="adblock-page-title"
-          >{% if page.title %}{{ page.title }}{% elif title %}{{ title }}{%
-          endif %}</b
-        >
+        <b id="adblock-page-title">
+          {% if page.title %}
+          {{ page.title }}
+          {% elif post.title %}
+          {{ post.title }}
+          {% elif title %}
+          {{ title }}
+          {% endif %}
+        </b>
         you've visited.
       </p>
       <p>
@@ -75,7 +80,17 @@
 <script src="/assets/adblock-notify/script.js"></script>
 <link rel="stylesheet" href="/assets/adblock-notify/style.css" />
 <script>
-  setTimeout(() => {
-    document.getElementById('adblock-page-title').innerHTML = document.title;
-  }, 1000);
+  document.addEventListener('DOMContentLoaded', function (event) {
+    setTimeout(() => {
+      const titleBold = document.getElementById('adblock-page-title');
+      if (titleBold) {
+        const contains404 = /404/i.test(titleBold.textContent);
+        const isWMI = /^wmi$/i.test(titleBold.textContent.trim());
+        const isEmpty = titleBold.textContent.trim().length === 0;
+        if (contains404 || isWMI || isEmpty) {
+          titleBold.textContent = document.title;
+        }
+      }
+    }, 1000);
+  });
 </script>

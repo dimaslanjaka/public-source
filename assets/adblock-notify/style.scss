@@ -39,6 +39,12 @@ div[class^='ykwrp_'] {
   }
 }
 
+@media (min-width: 810px) and (min-height: 1080px) {
+  .ykth-inner {
+    top: 10%;
+  }
+}
+
 div[class^='ykwrp_']::before,
 div[class^='ykwrp_']::after,
 #ykth::before,
