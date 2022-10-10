@@ -1,4 +1,5 @@
 /** index.html builder */
+/// <reference types="nodejs-package-types" />
 import ejs from 'ejs';
 import fm from 'front-matter';
 import { readFileSync, rmSync, writeFileSync } from 'fs';
@@ -7,9 +8,9 @@ import MarkdownIt from 'markdown-it';
 import MarkdownItMark from 'markdown-it-mark';
 import MarkdownItUp from 'markdown-it-sup';
 import MarkdownItTaskList from 'markdown-it-task-lists';
-import 'nodejs-package-types/typings/index';
 import { join } from 'path';
 import { getConfig } from 'static-blog-generator';
+import './style';
 
 const readme = join(__dirname, 'readme.md');
 
