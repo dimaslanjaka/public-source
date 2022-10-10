@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   new adblock().ajaxMethod().then(hideNotifAdblock).catch(showNotifAdblock);
+  // make popup closable
   const closeId = document.getElementById('close-notif');
   if (closeId) {
     closeId.addEventListener('click', hideNotifAdblock);
