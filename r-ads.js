@@ -39,6 +39,15 @@ document.addEventListener('DOMContentLoaded', function (_e) {
     referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
   }
 
+  /**
+   * Create detailed cookie
+   * @param {string} name
+   * @param {string} value
+   * @param {number} expires
+   * @param {string} path
+   * @param {string} domain
+   * @param {boolean} secure
+   */
   function setCookie(name, value, expires, path, domain, secure) {
     let exp = '';
     if (expires) {
@@ -62,6 +71,11 @@ document.addEventListener('DOMContentLoaded', function (_e) {
     document.cookie = cookie;
   }
 
+  /**
+   * get cookie by name
+   * @param {string} cname
+   * @returns
+   */
   function getCookie(cname) {
     let name = cname + '=';
     let decodedCookie = decodeURIComponent(document.cookie);
