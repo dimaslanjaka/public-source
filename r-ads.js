@@ -152,7 +152,25 @@ document.addEventListener('DOMContentLoaded', function (_e) {
         {
           style: 'display:block',
           'data-ad-slot': '7354749098',
-          'data-ad-forma': 'auto',
+          'data-ad-format': 'auto',
+          'data-full-width-responsive': 'true'
+        },
+        {
+          style: 'display:block',
+          'data-ad-slot': '4467786752',
+          'data-ad-format': 'auto',
+          'data-full-width-responsive': 'true'
+        },
+        {
+          style: 'display:block',
+          'data-ad-slot': '3886113070',
+          'data-ad-format': 'auto',
+          'data-full-width-responsive': 'true'
+        },
+        {
+          style: 'display:block',
+          'data-ad-slot': '8619565002',
+          'data-ad-format': 'auto',
           'data-full-width-responsive': 'true'
         }
       ]
@@ -208,11 +226,15 @@ document.addEventListener('DOMContentLoaded', function (_e) {
   document.head.appendChild(script);
 
   // select random place
-  let adsPlaces = [];
-  const articles = Array.from(document.querySelectorAll('article'))
+  let adsPlaces = Array.from(
+    document.querySelectorAll('article,.page.main-inner')
+  )
     .map(getAllPlaces)
-    .flat(1);
-  adsPlaces = adsPlaces.concat(articles);
+    .flat(1)
+    .sort(function () {
+      return 0.5 - Math.random();
+    })
+    .filter((el) => el !== null);
 
   /**
    * get all ads places
@@ -227,9 +249,11 @@ document.addEventListener('DOMContentLoaded', function (_e) {
   }
 
   ads.ads.forEach((attr) => {
+    attr['data-ad-client'] = 'ca-pub-' + ads.pub;
     const ins = createIns(attr);
-    let nextOf = adsPlaces.shift();
+    let nextOf = adsPlaces.shift(); // get first element and remove it from list
     while (!nextOf) {
+      // find next when nextOf = null
       if (adsPlaces.length > 0) {
         // select next place
         nextOf = adsPlaces.shift();
@@ -238,6 +262,7 @@ document.addEventListener('DOMContentLoaded', function (_e) {
         nextOf = document.querySelector('div');
       }
     }
+
     insertAfter(ins, nextOf);
   });
 
@@ -246,6 +271,13 @@ document.addEventListener('DOMContentLoaded', function (_e) {
   for (let i = 0; i < allIns.length; i++) {
     //log('apply ad', i);
     const ins = allIns[i];
+    /*const bg = `https://via.placeholder.com/550x50/FFFFFF/000000/?text=Advertisement ${ins.getAttribute(
+      'data-ad-slot'
+    )} client ${ins.getAttribute('data-ad-client').replace('ca-pub-', '')}`;*/
+    const bg = `https://via.placeholder.com/200x50/FFFFFF/000000/?text=${ins
+      .getAttribute('data-ad-client')
+      .replace('ca-pub-', '')}`;
+    ins.style.backgroundImage = `url('${bg}')`;
     if (ins.innerHTML.trim() == '') {
       (adsbygoogle = window.adsbygoogle || []).push({});
     }
