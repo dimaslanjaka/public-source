@@ -13,6 +13,18 @@ document.addEventListener('DOMContentLoaded', function (_e) {
     return;
   }
 
+  /** Scroll to Hash */
+  const hash = window.location.hash;
+  if (hash.length > 0) {
+    const distanceFromTop = document
+      .querySelector(hash)
+      .getBoundingClientRect().top;
+    window.scrollTo({
+      top: distanceFromTop,
+      behavior: 'smooth'
+    });
+  }
+
   /** FUNC START */
 
   const log =
