@@ -1,5 +1,5 @@
 <div id="keywords">
-  {% set keywordTitle = "Keywords on "+page.title %}
+  {% set keywordTitle = "Incoming terms of "+page.title %}
   {% if post.keywords %}
   <h5>{{ keywordTitle }}</h5>
   {{ post.keywords | join(", ") }}
