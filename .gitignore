@@ -10,3 +10,10 @@ yarn.lock
 *-old
 *-backup
 tmp-*
+
+# chimeraland
+/attendants
+/monsters
+/materials
+/recipes
+/scenic-spot
