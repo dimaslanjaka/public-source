@@ -2,6 +2,6 @@
 
 **COPYING THE ARTICLES HERE ARE STRICTLY PROHIBITED**
 
-| Source | Production |
-| :--- | :--- |
-| /page | https://github.com/dimaslanjaka/page/ |
+| Path | Source | Production |
+| :--- | :--- | :--- |
+| /page | https://github.com/dimaslanjaka/page/tree/master | https://github.com/dimaslanjaka/page/tree/gh-pages |
