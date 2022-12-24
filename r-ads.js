@@ -33,6 +33,9 @@ function triggerAdsense(_e) {
 
 	/** FUNC START */
 
+	/**
+	 * debug on localhost
+	 */
 	const log =
 		location.port.length > 0
 			? console.log
@@ -62,7 +65,7 @@ function triggerAdsense(_e) {
 	/**
 	 * insert next other
 	 * @param {HTMLElement} newNode
-	 * @param {HTMLElement} referenceNode insert after this element
+	 * @param {HTMLElement|undefined} referenceNode insert after this element
 	 */
 	function insertAfter(newNode, referenceNode) {
 		if (referenceNode) {
@@ -222,6 +225,10 @@ function triggerAdsense(_e) {
 	}
 	if (findPlaces.length === 0) {
 		findPlaces = Array.from(document.querySelectorAll('#bootstrap-wrapper'));
+	}
+	// fallback search at body
+	if (findPlaces.length === 0) {
+		findPlaces = Array.from(document.querySelectorAll('body'));
 	}
 	// select random place
 	let adsPlaces = findPlaces
