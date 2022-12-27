@@ -21,7 +21,7 @@ layout: about
 This is Website is made by **Dimas Lanjaka** codename **L3n4r0x**, Blog name **"WMI" (Website Management Indonesia)**.
 
 Previous domains of this blog:
-- [snfr.cf](http://snfr.cf]
+- [snfr.cf](http://snfr.cf)
 - [webdevelopment.cf](http://webdevelopment.cf)
 - [web-development.cf](http://web-development.cf)
 - [snfr.ml](http://snfr.ml)
