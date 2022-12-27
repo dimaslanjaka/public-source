@@ -1,8 +1,9 @@
 ---
 title: About
 date: 2020-07-28T17:56:02+07:00
-updated: 2022-11-03T08:35:33+07:00
-type: about
+updated: 2022-12-28T00:19:53+07:00
+lang: en
+type: page
 layout: about
 ---
 
@@ -20,15 +21,16 @@ layout: about
 This is Website is made by **Dimas Lanjaka** codename **L3n4r0x**, Blog name **"WMI" (Website Management Indonesia)**.
 
 Previous domains of this blog:
-- snfr.cf
-- webdevelopment.cf
-- snfr.ml
-- dijaa.ga
-- webmanajemen.xyz
-- dimaslanjaka.github.io
-- git.webmanajemen.com
-- blog.akarmas.com
-- web-manajemen.blogspot.com
+- [snfr.cf](http://snfr.cf]
+- [webdevelopment.cf](http://webdevelopment.cf)
+- [web-development.cf](http://web-development.cf)
+- [snfr.ml](http://snfr.ml)
+- [dijaa.ga](http://dijaa.ga)
+- [webmanajemen.xyz](http://webmanajemen.xyz)
+- [dimaslanjaka.github.io](http://dimaslanjaka.github.io)
+- [git.webmanajemen.com](http://git.webmanajemen.com)
+- [blog.akarmas.com](http://blog.akarmas.com)
+- [web-manajemen.blogspot.com](http://web-manajemen.blogspot.com)
 
 **Website Management Indonesia** is a blog to implement a code of website code to be published.
 We will publish everything we have implemented ourselves.
