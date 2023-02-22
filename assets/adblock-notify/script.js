@@ -41,9 +41,7 @@ class adblock {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  var ykrd1 =
-    Math.random().toString(36).substring(2, 15) +
-    Math.random().toString(36).substring(2, 15);
+  var ykrd1 = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
   var ykrd2 = Math.random().toString(36).substring(2, 7);
   var adblockWrapper = document.getElementById('ykth');
   if (adblockWrapper) {
