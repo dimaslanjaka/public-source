@@ -8,13 +8,15 @@
  * ADSENSE FULLY AUTOMATIC
  */
 
-document.addEventListener('DOMContentLoaded', function () {
+/*document.addEventListener('DOMContentLoaded', function () {
   if (!islocalhost()) {
     window.addEventListener('scroll', triggerAdsense);
   } else {
     triggerAdsense();
   }
-});
+});*/
+
+document.addEventListener('DOMContentLoaded', triggerAdsense);
 
 /**
  * Prevent Duplicate
