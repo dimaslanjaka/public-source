@@ -21,6 +21,7 @@ Promise.all(
   // console.log(split);
 
   const searchEl = document.getElementById('quizTerm');
+  const onlyO = document.getElementById('showOnly');
 
   const doSearch = function (e) {
     if (e instanceof Event) e.preventDefault();
@@ -57,7 +58,7 @@ Promise.all(
     let filteredResult = result.filter(function (elem, index, self) {
       return index === self.indexOf(elem);
     });
-    const onlyO = document.getElementById('showOnly');
+
     if (onlyO.checked) {
       filteredResult = filteredResult.filter((str) => str.endsWith('(O)'));
     }
@@ -67,6 +68,9 @@ Promise.all(
   doSearch();
 
   searchEl.addEventListener('input', doSearch);
+  onlyO.addEventListener('change', doSearch);
+
+  document.getElementById('nosubmit').addEventListener('submit', doSearch);
 });
 
 /**
