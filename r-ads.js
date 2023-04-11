@@ -2,6 +2,7 @@
 /* eslint-disable no-global-assign */
 
 // <reference path="./cookie.js" />
+// 5 6 ^ %
 
 /**
  * ADSENSE FULLY AUTOMATIC
@@ -229,12 +230,13 @@ function triggerAdsense(_e) {
 		ins.style.backgroundRepeat = 'no-repeat';
 		// log('parent width banner', i + 0, ins.parentElement.offsetWidth);
 
-		if (ins.parentElement.offsetWidth === 0) {
+		const slot = ins.getAttribute('data-ad-client').trim();
+		if (ins.parentElement.offsetWidth < 250) {
 			// remove banner when parent width is 0 or display: none
-			log('remove banner', i + 1);
+			log(i + 1, 'remove', slot);
 			ins.remove();
 		} else if (ins.innerHTML.trim().length === 0) {
-			log(ins.parentElement.offsetWidth);
+			log(i + 1, slot, 'width', ins.parentElement.offsetWidth);
 			// (adsbygoogle = window.adsbygoogle || []).push({});
 			if (!window.adsbygoogle) window.adsbygoogle = [];
 			window.adsbygoogle.push({});
