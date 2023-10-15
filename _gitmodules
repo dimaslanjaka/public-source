@@ -1,4 +1,0 @@
-[submodule "backend"]
-        url = https://git.heroku.com/hexo-backend.git
-        path = backend
-        branch = master
