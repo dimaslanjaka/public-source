@@ -14,14 +14,12 @@ tmp/
 temp/
 yarn.lock
 package-lock.json
-**/.yarn/*.gz
-**/.yarn/cache
-**/.yarn/version*
-**/.yarn/unplug*
+/.yarn/
+/.yarnrc.yml
 
 # chimeraland
-/attendants
-/monsters
-/materials
-/recipes
-/scenic-spot
+/chimeraland/attendants
+/chimeraland/monsters
+/chimeraland/materials
+/chimeraland/recipes
+/chimeraland/scenic-spot

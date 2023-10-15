@@ -41,5 +41,6 @@
   },
   "optionalDependencies": {
     "wmi-page": "file:page"
-  }
+  },
+  "packageManager": "yarn@3.6.4"
 }
