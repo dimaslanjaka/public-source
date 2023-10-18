@@ -12,117 +12,213 @@ author:
 cover: "https://miro.medium.com/max/700/1*aOv6h3h_v9PQWa03zGACnw.png"
 ---
 
-<meta content='Lawyers, safe, Personal, isuranceQS, Insurance, Cheap, Auto, Cheap Car, Distance,' name='keywords'/>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<meta
+  content="Lawyers, safe, Personal, isuranceQS, Insurance, Cheap, Auto, Cheap Car, Distance,"
+  name="keywords"
+/>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"
+></script>
 <script>
-function setCookie(cname, cvalue, exdays) {
-  var d = new Date();
-  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-  var expires = "expires="+d.toUTCString();
-  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
+  function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+    var expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }
 
-function getCookie(cname) {
-  var name = cname + "=";
-  var ca = document.cookie.split(';');
-  for(var i = 0; i < ca.length; i++) {
-    var c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
+  function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(";");
+    for (var i = 0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == " ") {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
     }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
+    return "";
+  }
+
+  function checkCookie() {
+    var user = getCookie("username");
+    if (user != "") {
+      alert("Welcome again " + user);
+    } else {
+      user = prompt("Please enter your name:", "");
+      if (user != "" && user != null) {
+        setCookie("username", user, 365);
+      }
     }
   }
-  return "";
-}
-
-function checkCookie() {
-  var user = getCookie("username");
-  if (user != "") {
-    alert("Welcome again " + user);
-  } else {
-    user = prompt("Please enter your name:", "");
-    if (user != "" && user != null) {
-      setCookie("username", user, 365);
-    }
-  }
-}
 </script>
 <style type="text/css">
-.clear{clear: both}
-#comments,.comments{display:none}
-.overflow{overflow:auto}
-.fa{color:green}
-.center{margin-right:0px;margin-left:0px}
-.fa{margin-left:5px; margin-right:5px}
+  .clear {
+    clear: both;
+  }
+  #comments,
+  .comments {
+    display: none;
+  }
+  .overflow {
+    overflow: auto;
+  }
+  .fa {
+    color: green;
+  }
+  .center {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .fa {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 </style>
-<center><img src="https://tools.ip2location.com/468x60.png" title="IP" width="468" height="60" /></center>
+<center>
+  <img
+    src="https://tools.ip2location.com/468x60.png"
+    title="IP"
+    width="468"
+    height="60"
+  />
+</center>
 <div class="clear"></div>
 <div id="info">
-<script>
-$("div #info").html('<div><b>User-agent:</b> '+navigator.userAgent+'<br/><b>Browser Language:</b> '+navigator.language+'<br/><b>Platform:</b> '+navigator.platform+'<br/><b>Browser Name:</b> '+navigator.appName+' v'+navigator.appVersion+'</div>');
-</script>
+  <script>
+    $("div #info").html(
+      "<div><b>User-agent:</b> " +
+        navigator.userAgent +
+        "<br/><b>Browser Language:</b> " +
+        navigator.language +
+        "<br/><b>Platform:</b> " +
+        navigator.platform +
+        "<br/><b>Browser Name:</b> " +
+        navigator.appName +
+        " v" +
+        navigator.appVersion +
+        "</div>",
+    );
+  </script>
 </div>
-<blockquote>Click <img src="https://res.cloudinary.com/dimaslanjaka/image/fetch/http://denalidestroyers.org/wp-content/uploads/continue-button-1024x282.png" style="display:inline-block !important;height:15px;width:auto" title="Continue!" /> Below</blockquote>
+<blockquote>
+  Click
+  <img
+    src="https://res.cloudinary.com/dimaslanjaka/image/fetch/http://denalidestroyers.org/wp-content/uploads/continue-button-1024x282.png"
+    style="display: inline-block !important; height: 15px; width: auto"
+    title="Continue!"
+  />
+  Below
+</blockquote>
 
 <!-- Channel Responsive -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-7975270895217217"
-     data-ad-slot="2600604346"
-     data-ad-format="auto"></ins>
+<ins
+  class="adsbygoogle"
+  style="display: block"
+  data-ad-client="ca-pub-7975270895217217"
+  data-ad-slot="2600604346"
+  data-ad-format="auto"
+></ins>
 <script>
-(adsbygoogle = window.adsbygoogle || []).push({});
+  (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
-  <!-- banner here -->
+<!-- banner here -->
 
 <center>
-<div id="continue"></div>
+  <div id="continue"></div>
 </center>
 <script>
-function getParameterByName(name, url) {
+  function getParameterByName(name, url) {
     if (!url) url = window.location.href;
-    name = name.replace(/[\[\]]/g, '\\$&');
-    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-        results = regex.exec(url);
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+      results = regex.exec(url);
     if (!results) return null;
-    if (!results[2]) return '';
-    return decodeURIComponent(results[2].replace(/\+/g, ' '));
-}
-var redirectURL = getCookie('redirect') ? getCookie('redirect') : (getParameterByName('url') ? getParameterByName('url') : false);
-if (redirectURL){
-location.replace('https://www.webmanajemen.com/page/safelink.html?url='+redirectURL);
-}
-$('#continue').html('<div class="text-center d-inline-block"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> <a href="https://nullrefer.com/?'+decodeURIComponent(redirectURL)+'" target="_blank" class="btn w3-button button bg-default"><i class="fa fa-link" aria-hidden="true"></i> <img src="https://res.cloudinary.com/dimaslanjaka/image/fetch/http://denalidestroyers.org/wp-content/uploads/continue-button-1024x282.png" style="display:inline-block !important;height:15px;width:120px" align="top" title="Continue!" /> <i class="fa fa-external-link"></i></a> <i class="fa fa-arrow-circle-left" aria-hidden="true"></i></div>');
+    if (!results[2]) return "";
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+  }
+  var redirectURL = getCookie("redirect")
+    ? getCookie("redirect")
+    : getParameterByName("url")
+    ? getParameterByName("url")
+    : false;
+  if (redirectURL) {
+    location.replace(
+      "https://www.webmanajemen.com/page/safelink.html?url=" + redirectURL,
+    );
+  }
+  $("#continue").html(
+    '<div class="text-center d-inline-block"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> <a href="https://nullrefer.com/?' +
+      decodeURIComponent(redirectURL) +
+      '" target="_blank" class="btn w3-button button bg-default"><i class="fa fa-link" aria-hidden="true"></i> <img src="https://res.cloudinary.com/dimaslanjaka/image/fetch/http://denalidestroyers.org/wp-content/uploads/continue-button-1024x282.png" style="display:inline-block !important;height:15px;width:120px" align="top" title="Continue!" /> <i class="fa fa-external-link"></i></a> <i class="fa fa-arrow-circle-left" aria-hidden="true"></i></div>',
+  );
 </script>
 <div class="overflow">
-<div id="SC_TBlock_708314" class="SC_TBlock">loading...</div>
-<script type="text/javascript">
-  (sc_adv_out = window.sc_adv_out || []).push({
-    id: "708314",
-    domain: "n.ads1-adnow.com",
-  });
-  (sc_adv_out = window.sc_adv_out || []).push({
-    id: "708314",
-    domain: "n.ads5-adnow.com",
-    no_div: false,
-  });
-</script>
-<script async type="text/javascript" src="//st-n.ads5-adnow.com/js/a.js"></script>
-<script type="text/javascript" src="//st-n.ads1-adnow.com/js/adv_out.js"></script>
+  <div id="SC_TBlock_708314" class="SC_TBlock">loading...</div>
+  <script type="text/javascript">
+    (sc_adv_out = window.sc_adv_out || []).push({
+      id: "708314",
+      domain: "n.ads1-adnow.com",
+    });
+    (sc_adv_out = window.sc_adv_out || []).push({
+      id: "708314",
+      domain: "n.ads5-adnow.com",
+      no_div: false,
+    });
+  </script>
+  <script
+    async
+    type="text/javascript"
+    src="//st-n.ads5-adnow.com/js/a.js"
+  ></script>
+  <script
+    type="text/javascript"
+    src="//st-n.ads1-adnow.com/js/adv_out.js"
+  ></script>
 </div>
 
-<center><iframe src="//ads.exdynsrv.com/iframe.php?idzone=2935872&size=300x250" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0"></iframe></center>
+<center>
+  <iframe
+    src="//ads.exdynsrv.com/iframe.php?idzone=2935872&size=300x250"
+    width="300"
+    height="250"
+    scrolling="no"
+    marginwidth="0"
+    marginheight="0"
+    frameborder="0"
+  ></iframe>
+</center>
 
 <script>
-var loadCSSFiles=function(){var e,t,a=[/*"//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css",*/"//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"],n=document.getElementsByTagName("head")[0];for(t=0;t<a.length;t++)e=document.createElement("link"),e.rel="stylesheet",e.href=a[t],n.appendChild(e)},raf=requestAnimationFrame||mozRequestAnimationFrame||webkitRequestAnimationFrame||msRequestAnimationFrame;raf?raf(loadCSSFiles):window.addEventListener("load",loadCSSFiles);
+  var loadCSSFiles = function () {
+      var e,
+        t,
+        a = [
+          /*"//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css",*/ "//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css",
+        ],
+        n = document.getElementsByTagName("head")[0];
+      for (t = 0; t < a.length; t++)
+        (e = document.createElement("link")),
+          (e.rel = "stylesheet"),
+          (e.href = a[t]),
+          n.appendChild(e);
+    },
+    raf =
+      requestAnimationFrame ||
+      mozRequestAnimationFrame ||
+      webkitRequestAnimationFrame ||
+      msRequestAnimationFrame;
+  raf ? raf(loadCSSFiles) : window.addEventListener("load", loadCSSFiles);
 </script>
 <script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-(adsbygoogle = window.adsbygoogle || []).push({});
-(adsbygoogle = window.adsbygoogle || []).push({});
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 <!--
 <script>function utmx_section(){}function utmx(){}(function(){var
@@ -139,11 +235,13 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 </script><script>utmx('url','A/B');</script>
 -->
 
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-format="autorelaxed"
-     data-ad-client="ca-pub-7975270895217217"
-     data-ad-slot="1658568086"></ins>
+<ins
+  class="adsbygoogle"
+  style="display: block"
+  data-ad-format="autorelaxed"
+  data-ad-client="ca-pub-7975270895217217"
+  data-ad-slot="1658568086"
+></ins>
 <script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
+  (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
