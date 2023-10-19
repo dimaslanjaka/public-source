@@ -18,8 +18,8 @@ package-lock.json
 /.yarnrc.yml
 
 # chimeraland
-/chimeraland/attendants
-/chimeraland/monsters
-/chimeraland/materials
-/chimeraland/recipes
-/chimeraland/scenic-spot
+# /chimeraland/attendants
+# /chimeraland/monsters
+# /chimeraland/materials
+# /chimeraland/recipes
+# /chimeraland/scenic-spot
