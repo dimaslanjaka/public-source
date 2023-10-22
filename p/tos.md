@@ -5,8 +5,7 @@ date: 2018-11-24
 updated: 2023-10-19T02:37:37+07:00
 ---
 
-**Terms and Conditions**
-------------------------
+## Terms and Conditions
 
 Welcome to WMI!
 

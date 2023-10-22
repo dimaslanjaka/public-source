@@ -5,8 +5,7 @@ date: 2018-11-24
 updated: 2023-10-19T02:36:32+07:00
 ---
 
-Privacy Policy
-==============
+## Privacy Policy
 
 If you require any more information or have any questions about our privacy policy, please feel free to contact us by email at [http://web-manajemen.blogspot.com/p/contact.html](http://web-manajemen.blogspot.com/p/contact.html).
 At web-manajemen.blogspot.com we consider the privacy of our visitors to be extremely important. This privacy policy document describes in detail the types of personal information is collected and recorded by web-manajemen.blogspot.com and how we use it.
