@@ -1,2 +1,5 @@
 https://www.webmanajemen.com/2023/10/reactjs-is-mounted-hook-with-use-effect.html
 https://www.webmanajemen.com/2017/04/cara-menambah-syntax-highlighter-dengan.html
+https://www.webmanajemen.com/2023/09/how-to-use-react-suite-toaster-in-reactjs.html
+https://www.webmanajemen.com/notes/catatan-muslim.html
+https://www.webmanajemen.com/kunci-jawaban/contoh-soal-perbandingan.html
