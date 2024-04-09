@@ -1,7 +1,7 @@
 ---
 title: About
 date: 2020-07-28T17:56:02+07:00
-updated: 2022-12-28T00:19:53+07:00
+updated: 2024-04-09T09:30:20+07:00
 lang: en
 type: page
 layout: about
