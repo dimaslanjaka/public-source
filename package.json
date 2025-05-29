@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prepare": "if [ -f ./node_modules/.bin/husky ]; then npx husky install; fi",
+    "prepare": "node -e \"try { require.resolve('husky'); } catch (e) { process.exit(0); }\" && husky install",
     "update": "npx npm-check-updates -u -x chalk,deepmerge-ts",
     "ci": "yarn install --production=true --immutable --immutable-cache --check-cache --frozen-lockfile --check-files",
     "prod": "npm install --omit=dev",
