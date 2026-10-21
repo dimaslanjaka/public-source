@@ -34,7 +34,7 @@
     "moment-timezone": "^0.6.0",
     "requirejs": "^2.3.7",
     "safelinkify": "https://github.com/dimaslanjaka/safelink/raw/monorepo/release/safelinkify.tgz",
-    "sbg-utility": "https://github.com/dimaslanjaka/static-blog-generator/raw/refs/heads/sbg-utility/packages/sbg-utility/release/sbg-utility.tgz",
+    "sbg-utility": "https://github.com/dimaslanjaka/static-blog-generator/raw/3f36c7384fa414d0207460e00c0d7d362dba995f/packages/sbg-utility/release/sbg-utility.tgz",
     "toastr": "^2.1.4"
   },
   "devDependencies": {
@@ -44,12 +44,15 @@
     "@types/toastr": "^2.1.43",
     "@typescript-eslint/eslint-plugin": "^8.38.0",
     "@typescript-eslint/parser": "^8.38.0",
-    "binary-collections": "https://github.com/dimaslanjaka/bin/raw/refs/heads/master/releases/bin.tgz",
+    "binary-collections": "https://github.com/dimaslanjaka/bin/raw/9d2f7ebf4c37cf1d58487951c9e2ad3a20b917c1/releases/bin.tgz",
     "eslint": "^9.32.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.3",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.2",
     "prettier": "^3.6.2"
+  },
+  "resolutions": {
+    "got": "11.8.2"
   }
 }
